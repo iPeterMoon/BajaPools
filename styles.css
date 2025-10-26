@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Orbitron";
+    src: url("/assets/fonts/orbitron.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/montserrat.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("/assets/fonts/lato.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("/assets/fonts/nunitosans.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+
+@theme {
+    /* Colores del sitio*/
+    --color-light-gray: #e4e4e4;
+    --color-primary-color: #008dd1;
+    --color-primary-gray: #808080;
+    --color-darker-gray: #292929;
+
+    /* Fuentes del sitio */
+    --font-orbitron: "Orbitron", system-ui, sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-lato: "Lato", sans-serif;
+    --font-nunito: "Nunito Sans", sans-serif;
+
+    /* Breakpoints */
+    --breakpoint-3xl: 106rem;
+    --breakpoint-mdl: 62rem;
+}
