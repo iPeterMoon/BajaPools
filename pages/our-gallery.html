@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../assets/output.css" />
+        <link rel="icon" type="image/png" href="../assets/imgs/logo.png" />
         <link
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
@@ -233,48 +234,6 @@
             <section class="py-16 bg-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div
-                        id="filter-container"
-                        class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12"
-                    >
-                        <button
-                            class="filter-btn bg-primary-color text-white font-orbitron font-semibold py-2 px-5 rounded-md transition-all"
-                            data-filter="all"
-                        >
-                            All
-                        </button>
-                        <button
-                            class="filter-btn bg-gray-200 text-gray-800 hover:bg-gray-300 font-orbitron font-semibold py-2 px-5 rounded-md transition-all"
-                            data-filter="pools"
-                        >
-                            Pool Installations
-                        </button>
-                        <button
-                            class="filter-btn bg-gray-200 text-gray-800 hover:bg-gray-300 font-orbitron font-semibold py-2 px-5 rounded-md transition-all"
-                            data-filter="remodels"
-                        >
-                            Remodels
-                        </button>
-                        <button
-                            class="filter-btn bg-gray-200 text-gray-800 hover:bg-gray-300 font-orbitron font-semibold py-2 px-5 rounded-md transition-all"
-                            data-filter="pavers"
-                        >
-                            Pavers & Decking
-                        </button>
-                        <button
-                            class="filter-btn bg-gray-200 text-gray-800 hover:bg-gray-300 font-orbitron font-semibold py-2 px-5 rounded-md transition-all"
-                            data-filter="bbqs"
-                        >
-                            BBQs & Fire Pits
-                        </button>
-                        <button
-                            class="filter-btn bg-gray-200 text-gray-800 hover:bg-gray-300 font-orbitron font-semibold py-2 px-5 rounded-md transition-all"
-                            data-filter="exterior"
-                        >
-                            Exterior Design
-                        </button>
-                    </div>
-
-                    <div
                         id="project-grid"
                         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
                     >
@@ -440,106 +399,336 @@
                                 >
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="py-16 bg-gray-50">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-12">
-                        <h2
-                            class="text-4xl font-bold text-gray-900 font-orbitron tracking-wide uppercase"
-                        >
-                            What Our Clients Say
-                        </h2>
                         <div
-                            class="w-36 h-1 bg-primary-color mx-auto mt-4"
-                        ></div>
-                    </div>
-
-                    <div class="flex flex-wrap justify-center gap-8 lg:gap-6">
-                        <div
-                            class="flex-1 basis-full md:basis-[45%] lg:basis-[30%] max-w-sm p-8 bg-white rounded-lg shadow-xl"
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="pavers"
                         >
-                            <div class="flex items-center text-yellow-400 mb-4">
-                                <i class="bx bxs-star text-2xl"></i>
-                                <i class="bx bxs-star text-2xl"></i>
-                                <i class="bx bxs-star text-2xl"></i>
-                                <i class="bx bxs-star text-2xl"></i>
-                                <i class="bx bxs-star text-2xl"></i>
+                            <img
+                                src="../assets/imgs/paver-2.jpeg"
+                                alt="Paver Driveway"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Driveway Pavers</span
+                                >
                             </div>
-                            <p
-                                class="font-nunito text-gray-700 text-lg italic leading-relaxed"
+                        </div>
+
+                        <!-- Nuevos project-items agregados -->
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="pools"
+                        >
+                            <img
+                                src="../assets/imgs/pool-7.png"
+                                alt="Pool Installation 2"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
                             >
-                                "Baja Pools transformed our unusable sloped yard
-                                into a stunning resort. The retaining wall is
-                                solid, and the pool is beyond our wildest
-                                dreams. We couldn't be happier."
-                            </p>
-                            <p
-                                class="font-orbitron font-bold text-gray-900 text-lg mt-4"
-                            >
-                                - The Johnson Family
-                            </p>
-                            <p class="font-nunito text-gray-500 text-sm">
-                                La Jolla, CA
-                            </p>
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Modern Pool 2</span
+                                >
+                            </div>
                         </div>
 
                         <div
-                            class="flex-1 basis-full md:basis-[45%] lg:basis-[30%] max-w-sm p-8 bg-white rounded-lg shadow-xl"
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="pools"
                         >
-                            <div class="flex items-center text-yellow-400 mb-4">
-                                <i class="bx bxs-star text-2xl"></i>
-                                <i class="bx bxs-star text-2xl"></i>
-                                <i class="bx bxs-star text-2xl"></i>
-                                <i class="bx bxs-star text-2xl"></i>
-                                <i class="bx bxs-star text-2xl"></i>
+                            <img
+                                src="../assets/imgs/pool-3.jpeg"
+                                alt="Pool Installation 3"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Luxury Pool</span
+                                >
                             </div>
-                            <p
-                                class="font-nunito text-gray-700 text-lg italic leading-relaxed"
-                            >
-                                "We got 3 quotes for our pool remodel, and Baja
-                                Pools was the most professional. They explained
-                                everything, used the 3D design, and finished on
-                                time and on budget."
-                            </p>
-                            <p
-                                class="font-orbitron font-bold text-gray-900 text-lg mt-4"
-                            >
-                                - Mark D.
-                            </p>
-                            <p class="font-nunito text-gray-500 text-sm">
-                                Encinitas, CA
-                            </p>
                         </div>
 
                         <div
-                            class="flex-1 basis-full md:basis-[45%] lg:basis-[30%] max-w-sm p-8 bg-white rounded-lg shadow-xl"
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="pools"
                         >
-                            <div class="flex items-center text-yellow-400 mb-4">
-                                <i class="bx bxs-star text-2xl"></i>
-                                <i class="bx bxs-star text-2xl"></i>
-                                <i class="bx bxs-star text-2xl"></i>
-                                <i class="bx bxs-star text-2xl"></i>
-                                <i class="bx bxs-star text-2xl"></i>
+                            <img
+                                src="../assets/imgs/pool-4.webp"
+                                alt="Pool Installation 4"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Backyard Pool</span
+                                >
                             </div>
-                            <p
-                                class="font-nunito text-gray-700 text-lg italic leading-relaxed"
+                        </div>
+
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="bbqs"
+                        >
+                            <img
+                                src="../assets/imgs/bbq-2.jpeg"
+                                alt="BBQ Project 2"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
                             >
-                                "The custom BBQ island and fire pit are the best
-                                part of our new patio. The stonework matches our
-                                house perfectly. Incredible craftsmanship and
-                                service."
-                            </p>
-                            <p
-                                class="font-orbitron font-bold text-gray-900 text-lg mt-4"
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Outdoor Kitchen</span
+                                >
+                            </div>
+                        </div>
+
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="exterior"
+                        >
+                            <img
+                                src="../assets/imgs/exterior-2.jpeg"
+                                alt="Exterior Design 2"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
                             >
-                                - Sarah & Tom
-                            </p>
-                            <p class="font-nunito text-gray-500 text-sm">
-                                Poway, CA
-                            </p>
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Exterior Makeover</span
+                                >
+                            </div>
+                        </div>
+
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="walls"
+                        >
+                            <img
+                                src="../assets/imgs/block-1.jpeg"
+                                alt="Block Wall Project"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Retaining Wall</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="walls"
+                        >
+                            <img
+                                src="../assets/imgs/bbq-3.jpeg"
+                                alt="BBQ Project"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >BBQ</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="walls"
+                        >
+                            <img
+                                src="../assets/imgs/block-2.jpg"
+                                alt="Block Wall Project"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Block Wall</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="walls"
+                        >
+                            <img
+                                src="../assets/imgs/firepit-3.jpeg"
+                                alt="Firepit"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Custom Firepit</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="walls"
+                        >
+                            <img
+                                src="../assets/imgs/pool-8.jpeg"
+                                alt="Pool"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Modern Pool</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="walls"
+                        >
+                            <img
+                                src="../assets/imgs/pool-9.jpeg"
+                                alt="Pool"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Modern Pool</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="walls"
+                        >
+                            <img
+                                src="../assets/imgs/pool-10.jpg"
+                                alt="Pool"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Modern Pool</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="walls"
+                        >
+                            <img
+                                src="../assets/imgs/pool-11.jpeg"
+                                alt="Pool"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Modern Pool</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="walls"
+                        >
+                            <img
+                                src="../assets/imgs/pool-12.jpg"
+                                alt="Pool"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Modern Pool</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="walls"
+                        >
+                            <img
+                                src="../assets/imgs/pool-13.jpeg"
+                                alt="Pool"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Modern Pool</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="walls"
+                        >
+                            <img
+                                src="../assets/imgs/pool-14.jpeg"
+                                alt="Pool"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Modern Pool</span
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="project-item relative rounded-lg shadow-lg overflow-hidden"
+                            data-category="walls"
+                        >
+                            <img
+                                src="../assets/imgs/pool-remodel-4.jpeg"
+                                alt="Pool"
+                                class="w-full h-80 object-cover"
+                            />
+                            <div
+                                class="absolute inset-0 bg-black opacity-0 hover:opacity-70 transition-opacity flex items-center justify-center"
+                            >
+                                <span
+                                    class="text-white text-xl font-orbitron font-bold"
+                                    >Modern Pool</span
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
