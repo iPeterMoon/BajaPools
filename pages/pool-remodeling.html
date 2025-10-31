@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Exterior Design | Baja Pools - Pool Contractor</title>
+        <title>Pool Remodeling | Baja Pools - Pool Contractor</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="assets/output.css" />
+        <link rel="stylesheet" href="../assets/output.css" />
         <link
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
@@ -12,11 +12,7 @@
     </head>
 
     <body onmouseup="stopDrag()">
-        <!-- =================================================== -->
-        <!-- HEADER (MODIFICADO PARA ESTA PÁGINA) -->
-        <!-- =================================================== -->
         <nav class="flex flex-col bg-white z-999 relative">
-            <!-- Barra superior de contacto -->
             <div
                 class="hidden xl:flex justify-between items-center text-black py-2 border-b border-b-primary-color"
             >
@@ -52,7 +48,6 @@
                 <div></div>
                 <a href="" class="flex items-center">
                     <i
-                        class_=""
                         class="bx bxl-facebook-square text-primary-color text-2xl pr-1"
                     ></i>
                     <span
@@ -73,19 +68,17 @@
                 </a>
                 <div></div>
             </div>
-            <!-- Barra de Navegación Principal -->
             <div
                 class="flex justify-between items-center text-black py-4 px-4 xl:px-8 2xl:px-16 bg-white drop-shadow-md"
             >
                 <a href="index.html">
                     <img
-                        src="/assets/imgs/logo.svg"
+                        src="../assets/imgs/logo.svg"
                         alt="logo baja pools"
                         class="w-52 h-16 object-cover hover:scale-105 transition-transform"
                     />
                 </a>
 
-                <!-- Navegación de Escritorio -->
                 <ul
                     class="hidden md:flex items-center gap-4 xl:gap-8 2xl:gap-16 font-semibold"
                 >
@@ -97,18 +90,17 @@
                     <li
                         class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
                     >
-                        <a href="about.html">About Us</a>
+                        <a href="about-us.html">About Us</a>
                     </li>
-                    <!-- Menú Desplegable de Servicios -->
                     <li
-                        class="p-3 text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl group relative z-40"
+                        class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl group relative z-40"
                     >
                         <a href="services.html">Services</a>
                         <i
                             class="bx bx-chevron-down text-black group-hover:text-primary-color"
                         ></i>
                         <div
-                            class="absolute w-60 text-xl bg-white text-black -left-6 top-full z-50 shadow-lg opacity-0 hidden group-hover:opacity-100 group-hover:block transition duration-300 ease-in-out"
+                            class="absolute w-3xs text-xl bg-white text-black -left-6 top-full z-50 shadow-lg opacity-0 hidden group-hover:opacity-100 group-hover:block transition duration-300 ease-in-out"
                         >
                             <ul>
                                 <li
@@ -121,7 +113,7 @@
                                 <li
                                     class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
                                 >
-                                    <a href="pavers.html">Pavers & Decking</a>
+                                    <a href="pavers.html">Pavers</a>
                                 </li>
                                 <li
                                     class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
@@ -138,12 +130,11 @@
                                     >
                                 </li>
                                 <li
-                                    class="py-2 px-4 bg-gray-100 text-primary-color transition-colors"
+                                    class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
                                 >
                                     <a href="exterior-design.html"
                                         >Exterior Design</a
                                     >
-                                    <!-- Página Actual -->
                                 </li>
                                 <li
                                     class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
@@ -163,12 +154,12 @@
                     <li
                         class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
                     >
-                        Our Projects
+                        <a href="our-gallery.html">Our Projects</a>
                     </li>
                     <li
                         class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
                     >
-                        Contact Us
+                        <a href="contact.html">Contact Us</a>
                     </li>
                 </ul>
                 <button
@@ -177,7 +168,6 @@
                     SCHEDULE FREE CONSULTATION
                     <i class="bx bx-calendar-alt text-2xl"></i>
                 </button>
-                <!-- Menú Móvil -->
                 <i
                     class="bx bx-menu md:hidden! text-5xl text-primary-color cursor-pointer"
                     onclick="toggleMenuState()"
@@ -195,7 +185,7 @@
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
                         >
-                            <a href="about.html">About Us</a>
+                            <a href="about-us.html">About Us</a>
                         </li>
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
@@ -205,24 +195,21 @@
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
                         >
-                            <a href="#">Our Projects</a>
+                            <a href="our-gallery.html">Our Projects</a>
                         </li>
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
                         >
-                            <a href="#">Contact Us</a>
+                            <a href="contact.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- =================================================== -->
-        <!-- HEADER DE PÁGINA (Específico del Servicio) -->
-        <!-- =================================================== -->
         <header
             class="relative h-64 md:h-80 bg-cover bg-center"
-            style="background-image: url('assets/imgs/exterior-1.webp')"
+            style="background-image: url('../assets/imgs/pool-remodel-1.webp')"
         >
             <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
             <div
@@ -231,22 +218,18 @@
                 <h1
                     class="font-orbitron text-white font-bold text-4xl md:text-6xl uppercase tracking-wide"
                 >
-                    Exterior Design
+                    Pool Remodeling
                 </h1>
                 <p
                     class="font-nunito text-gray-200 text-lg md:text-xl mt-4 max-w-2xl"
                 >
-                    A cohesive vision that unites your pool, patio, and
-                    landscape into a single, stunning space.
+                    Transform your outdated pool into the modern oasis you've
+                    always dreamed of.
                 </p>
             </div>
         </header>
 
-        <!-- =================================================== -->
-        <!-- CONTENIDO PRINCIPAL -->
-        <!-- =================================================== -->
         <main>
-            <!-- Sección 1: Introducción -->
             <section class="py-16 bg-white">
                 <div
                     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap-reverse md:flex-nowrap items-center gap-12"
@@ -255,272 +238,312 @@
                         <h2
                             class="font-orbitron text-gray-900 font-bold text-4xl uppercase mb-4"
                         >
-                            A Holistic Design Approach
+                            Why Remodel Your Pool?
                         </h2>
                         <div class="w-24 h-1 bg-primary-color mb-6"></div>
                         <div
                             class="font-nunito text-lg text-gray-700 space-y-4"
                         >
                             <p>
-                                A world-class backyard is more than just a pool.
-                                It's a complete, integrated environment where
-                                every element works in harmony. Our exterior
-                                design service focuses on creating that cohesive
-                                vision for your entire San Diego property.
+                                Is your pool showing its age? A remodel can do
+                                more than just update the look—it can improve
+                                safety, increase energy efficiency, and add
+                                valuable new features for your family to enjoy.
                             </p>
                             <p>
-                                We don't just build features; we design
-                                experiences. We consider how you'll move through
-                                the space, where you'll entertain, and how the
-                                landscape will complement the architecture of
-                                your home.
+                                Whether your plaster is stained, your tile is
+                                cracked, or you're simply ready for a change,
+                                our team can breathe new life into your
+                                backyard. We handle everything from simple
+                                surface upgrades to complete structural
+                                transformations.
                             </p>
                             <ul class="list-disc list-inside space-y-2">
                                 <li>
                                     <strong class="font-semibold"
-                                        >Seamless Integration:</strong
+                                        >Update Aesthetics:</strong
                                     >
-                                    Connecting your home, pool, patio, and
-                                    garden.
+                                    Replace dated tile and worn-out surfaces.
                                 </li>
                                 <li>
                                     <strong class="font-semibold"
-                                        >Maximize Usability:</strong
+                                        >Boost Efficiency:</strong
                                     >
-                                    Creating functional zones for dining,
-                                    relaxing, and playing.
+                                    Upgrade to variable-speed pumps and LED
+                                    lighting.
                                 </li>
                                 <li>
                                     <strong class="font-semibold"
-                                        >Unified Aesthetics:</strong
+                                        >Add New Features:</strong
                                     >
-                                    Ensuring materials, colors, and styles are
-                                    consistent.
+                                    Install a spa, baja shelf, or water
+                                    features.
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2">
-                        <img
-                            src="assets/imgs/exterior-2.jpeg"
-                            alt="Beautifully designed exterior space"
-                            class="w-full h-auto md:h-[500px] object-cover rounded-lg shadow-xl"
-                        />
+                    <div
+                        class="w-full md:w-1/2 rounded-lg shadow-lg border-4 border-primary-color"
+                    >
+                        <div
+                            id="container"
+                            class="relative w-full h-[400px] min-h-[300px] rounded-lg"
+                        >
+                            <div
+                                id="afterContainer"
+                                class="absolute w-full h-full"
+                            >
+                                <img
+                                    id="after"
+                                    class="w-full h-full object-cover"
+                                    src="../assets/imgs/after.jpeg"
+                                    alt="After remodeling"
+                                />
+                            </div>
+                            <div
+                                id="beforeContainer"
+                                class="absolute w-full h-full"
+                                style="clip-path: inset(0 50% 0 0)"
+                            >
+                                <img
+                                    id="before"
+                                    class="w-full h-full object-cover"
+                                    src="../assets/imgs/before.jpeg"
+                                    alt="Before remodeling"
+                                />
+                            </div>
+                            <div
+                                id="slider"
+                                onmousedown="startDrag(event)"
+                                class="flex h-full z-10 absolute top-0 gap-1 cursor-ew-resize justify-center items-center left-1/2 -translate-x-1/2 pointer-events-auto"
+                            >
+                                <i
+                                    class="bx bxs-left-arrow text-white text-xl"
+                                ></i>
+                                <div
+                                    id="slider-line"
+                                    class="w-2 h-full bg-white flex-1"
+                                ></div>
+                                <i
+                                    class="bx bxs-right-arrow text-white text-xl"
+                                ></i>
+                            </div>
+                            <div
+                                class="absolute bg-white px-4 py-2 rounded-lg shadow-md z-20 font-semibold left-5 bottom-4"
+                            >
+                                Before
+                            </div>
+                            <div
+                                class="absolute bg-white px-4 py-2 rounded-lg shadow-md z-20 font-semibold right-5 bottom-4"
+                            >
+                                After
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Sección 2: Elementos del Diseño (Nueva) -->
             <section class="py-16 bg-gray-50">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <!-- Título -->
                     <div class="text-center mb-12">
                         <h2
                             class="text-4xl font-bold text-gray-900 font-orbitron tracking-wide uppercase"
                         >
-                            Elements of Our Designs
+                            Our Remodeling Services
                         </h2>
                         <div
                             class="w-36 h-1 bg-primary-color mx-auto mt-4"
                         ></div>
                     </div>
 
-                    <!-- Contenedor de 4 Columnas -->
                     <div class="flex flex-wrap justify-center gap-8 lg:gap-6">
-                        <!-- Columna 1: Hardscaping -->
                         <div
                             class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
                         >
                             <i
-                                class="bx bxs-grid text-6xl text-primary-color"
+                                class="bx bxs-paint text-6xl text-primary-color"
                             ></i>
                             <h4
                                 class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
                             >
-                                Hardscaping
+                                Resurfacing
                             </h4>
                             <p
                                 class="font-nunito text-gray-700 text-base leading-relaxed"
                             >
-                                The foundation. This includes your pool deck,
-                                patios, walkways, retaining walls, and any stone
-                                or paver surfaces.
+                                The single biggest change. We chip out the old
+                                surface and apply a new, beautiful finish like
+                                modern pebble, quartz, or classic plaster.
                             </p>
                         </div>
 
-                        <!-- Columna 2: Softscaping -->
                         <div
                             class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
                         >
                             <i
-                                class="bx bx-leaf text-6xl text-primary-color"
+                                class="bx bxs-layer text-6xl text-primary-color"
                             ></i>
                             <h4
                                 class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
                             >
-                                Softscaping
+                                Tile & Coping
                             </h4>
                             <p
                                 class="font-nunito text-gray-700 text-base leading-relaxed"
                             >
-                                The living elements. We help select and place
-                                drought-tolerant plants, trees, shrubs, and turf
-                                to add color, texture, and privacy.
+                                Update your pool's "frame" with modern waterline
+                                tile and safe, stylish new coping around the
+                                edge.
                             </p>
                         </div>
 
-                        <!-- Columna 3: Lighting -->
                         <div
                             class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
                         >
                             <i
-                                class="bx bxs-bulb text-6xl text-primary-color"
+                                class="bx bxs-cog text-6xl text-primary-color"
                             ></i>
                             <h4
                                 class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
                             >
-                                Landscape Lighting
+                                Equipment Upgrades
                             </h4>
                             <p
                                 class="font-nunito text-gray-700 text-base leading-relaxed"
                             >
-                                Essential for ambiance and safety. We design
-                                low-voltage lighting systems that highlight
-                                trees, pathways, and water features.
+                                Save money and hassle by upgrading to a
+                                variable-speed pump, saltwater system, or smart
+                                controls you can manage from your phone.
                             </p>
                         </div>
 
-                        <!-- Columna 4: Structures -->
                         <div
                             class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
                         >
                             <i
-                                class="bx bxs-arch text-6xl text-primary-color"
+                                class="bx bxs-magic-wand text-6xl text-primary-color"
                             ></i>
                             <h4
                                 class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
                             >
-                                Shade Structures
+                                Feature Additions
                             </h4>
                             <p
                                 class="font-nunito text-gray-700 text-base leading-relaxed"
                             >
-                                We can design and build pergolas, patio covers,
-                                and other shade structures to create
-                                comfortable, usable space out of the sun.
+                                Add the features you've always wanted, from a
+                                relaxing baja shelf or integrated spa to elegant
+                                waterfalls and deck jets.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Sección 3: 3D Design (Nueva) -->
             <section class="py-16 bg-white">
                 <div
-                    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap-reverse md:flex-nowrap items-center gap-12"
+                    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap md:flex-nowrap items-center gap-12"
                 >
+                    <div class="w-full md:w-1/2">
+                        <img
+                            src="../assets/imgs/pool-9.jpeg"
+                            alt="Pool with baja shelf and spa"
+                            class="w-full h-auto md:h-[500px] object-cover rounded-lg shadow-xl"
+                        />
+                    </div>
                     <div class="w-full md:w-1/2">
                         <h2
                             class="font-orbitron text-gray-900 font-bold text-4xl uppercase mb-4"
                         >
-                            See It Before We Build It
+                            Add Modern Features
                         </h2>
                         <div class="w-24 h-1 bg-primary-color mb-6"></div>
                         <div
                             class="font-nunito text-lg text-gray-700 space-y-4"
                         >
                             <p>
-                                The most important part of our design process is
-                                our advanced 3D modeling. We don't just ask you
-                                to imagine your new backyard—we show it to you.
+                                A remodel is the perfect time to add features
+                                that completely change how you use your pool. We
+                                can structurally modify your existing pool shell
+                                to include:
                             </p>
-                            <p>
-                                Our designers will create a photorealistic 3D
-                                render of your entire property, allowing you to
-                                take a virtual tour. You can see how the morning
-                                sun hits the water, how the landscape lighting
-                                will look at night, and make changes to
-                                materials or layouts with confidence.
-                            </p>
+
                             <ul class="list-disc list-inside space-y-2">
                                 <li>
                                     <strong class="font-semibold"
-                                        >Make Confident Decisions:</strong
+                                        >Baja Shelves:</strong
                                     >
-                                    Change paver colors or plant sizes
-                                    virtually.
+                                    A large, shallow shelf (6-12 inches deep)
+                                    perfect for lounge chairs and kids.
                                 </li>
                                 <li>
                                     <strong class="font-semibold"
-                                        >Ensure Perfect Flow:</strong
+                                        >Integrated Spas:</strong
                                     >
-                                    Verify that pathways are wide enough and
-                                    seating areas feel right.
+                                    Add a custom gunite spa that overflows into
+                                    your pool, usable year-round.
                                 </li>
                                 <li>
                                     <strong class="font-semibold"
-                                        >A Clear Blueprint:</strong
+                                        >Water & Fire Features:</strong
                                     >
-                                    The final 3D model becomes the exact plan
-                                    our construction team follows.
+                                    From sheer descent waterfalls to rock
+                                    grottos and fire bowls.
+                                </li>
+                                <li>
+                                    <strong class="font-semibold"
+                                        >LED Lighting:</strong
+                                    >
+                                    Replace your old single bulb with vibrant,
+                                    color-changing LED lights.
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2">
-                        <img
-                            src="assets/imgs/pool-10.jpeg"
-                            alt="3D rendering of a backyard design"
-                            class="w-full h-auto md:h-[500px] object-cover rounded-lg shadow-xl"
-                        />
-                    </div>
                 </div>
             </section>
 
-            <!-- Sección 4: Galería (Nueva) -->
             <section class="py-16 bg-gray-50">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <!-- Título -->
                     <div class="text-center mb-12">
                         <h2
                             class="text-4xl font-bold text-gray-900 font-orbitron tracking-wide uppercase"
                         >
-                            Integrated Design Showcase
+                            Remodeling Showcase
                         </h2>
                         <div
                             class="w-36 h-1 bg-primary-color mx-auto mt-4"
                         ></div>
                     </div>
-                    <!-- Grilla de Imágenes -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                         <img
-                            src="assets/imgs/exterior-1.webp"
-                            alt="Backyard design with cohesive paver and pool"
+                            src="../assets/imgs/pool-remodel-1.webp"
+                            alt="Modern pool remodel with new tile"
                             class="w-full h-96 object-cover rounded-lg shadow-xl"
                         />
                         <img
-                            src="assets/imgs/pool-5.webp"
-                            alt="Complete exterior project with lighting"
+                            src="../assets.html/imgs/pool-remodel-2.jpeg"
+                            alt="Pool resurfacing with pebble finish"
+                            class="w-full h-96 object-cover rounded-lg shadow-xl"
+                            onerror="this.src='https://via.placeholder.com/600x400.png/0284C7/FFFFFF?text=Baja+Pools+Project'"
+                        />
+                        <img
+                            src="../assets/imgs/after.jpeg"
+                            alt="Complete backyard transformation"
                             class="w-full h-96 object-cover rounded-lg shadow-xl"
                         />
                         <img
-                            src="assets/imgs/after.jpeg"
-                            alt="Full backyard remodel with pool and patio"
-                            class="w-full h-96 object-cover rounded-lg shadow-xl"
-                        />
-                        <img
-                            src="assets/imgs/exterior-2.jpeg"
-                            alt="Modern landscape design integrated with home"
+                            src="../assets/imgs/pool-4.webp"
+                            alt="Remodeled pool with new spa and fire pits"
                             class="w-full h-96 object-cover rounded-lg shadow-xl"
                         />
                     </div>
                 </div>
             </section>
 
-            <!-- Sección CTA (Reutilizada) -->
             <section
                 class="relative py-20 bg-cover bg-center"
-                style="background-image: url('assets/imgs/exterior-2.jpeg')"
+                style="background-image: url('../assets/imgs/pool-3.jpeg')"
             >
                 <div class="absolute inset-0 bg-black opacity-70 z-10"></div>
                 <div
@@ -529,14 +552,15 @@
                     <h2
                         class="font-orbitron text-white font-bold text-3xl md:text-4xl uppercase tracking-wide"
                     >
-                        Let's Design Your Complete Vision
+                        Ready to transform your pool?
                     </h2>
                     <p
                         class="font-nunito text-gray-200 text-lg leading-relaxed"
                     >
-                        Don't just build a pool, build an oasis. Our design team
-                        is ready to help you plan every square foot of your
-                        backyard, from the water's edge to your property line.
+                        Don't wait another season. Let our remodeling experts
+                        show you how we can update, upgrade, and completely
+                        reimagine your existing pool. Contact us for a free
+                        consultation.
                     </p>
                     <a
                         href="#"
@@ -549,30 +573,26 @@
             </section>
         </main>
 
-        <!-- =================================================== -->
-        <!-- FOOTER (Igual a las otras páginas) -->
-        <!-- =================================================== -->
         <footer
             class="bg-black text-gray-300 border-t-4 border-primarbg-primary-color text-lg"
         >
             <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div class="flex flex-wrap justify-between gap-4">
-                    <!-- Columna 1: Logo y Descripción -->
                     <div class="w-full xl:w-1/2 xl:basis-[28%]">
                         <img
                             class="h-48 lg:h-36 object-cover mb-5 w-auto m-auto"
-                            src="assets/imgs/logo.svg"
+                            src="../assets/imgs/logo.svg"
                             alt="Logo Baja Pools"
                         />
+
                         <p class="text-lg leading-relaxed">
                             Baja Pools specializes in premium pool solutions in
                             San Diego County. With an unwavering commitment to
-                            quality and customer satisfaction, we transform
+                            quality and customer satisfaction, we transform _
                             homes with durable, high-quality pools.
                         </p>
                     </div>
 
-                    <!-- Columna 2: Quick Links -->
                     <div class="w-full xl:w-1/2 xl:basis-[16%]">
                         <h3
                             class="text-lg font-orbitron font-semibold text-white"
@@ -604,14 +624,14 @@
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="our-gallery.html"
                                     class="hover:text-sky-400 transition-colors duration-200"
                                     >Our Projects</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="contact.html"
                                     class="hover:text-sky-400 transition-colors duration-200"
                                     >Contact Us</a
                                 >
@@ -619,7 +639,6 @@
                         </ul>
                     </div>
 
-                    <!-- Columna 3: Contact Us -->
                     <div class="w-full xl:w-1/2 xl:basis-[16%]">
                         <h3
                             class="text-lg font-semibold text-white font-orbitron"
@@ -655,13 +674,12 @@
                         </div>
                     </div>
 
-                    <!-- Columna 4: Mapa -->
                     <div
                         class="w-full md:w-1/2 xl:basis-[24%] min-h-[200px] md:min-h-0"
                     >
                         <iframe
                             class="w-full h-full rounded-md border-0"
-                            src="https://www.google.com/maps/embed?pb=!1m18!m12!1m3!1d214691.8969865193!2d-117.2757271501237!3d32.74952800181318!2m3!1f0!2f0!3f0!3m2!1i1024!i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%2C%2C%20CA%2C%20USA!5e0!3m2!1sen!2smx!4v1678886053088!5m2!1sen!2smx"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214691.8969865193!2d-117.2757271501237!3d32.74952800181318!2m3!1f0!2f0!3f0!3m2!1i1024!i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%2C%20CA%2C%20USA!5e0!3m2!1sen!2smx!4v1678886053088!5m2!1sen!2smx"
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
@@ -670,7 +688,6 @@
                     </div>
                 </div>
 
-                <!-- Barra de Copyright -->
                 <div
                     class="border-t-2 border-primarbg-primary-color mt-10 pt-6 text-center"
                 >
@@ -682,7 +699,6 @@
             </div>
         </footer>
 
-        <!-- SCRIPT -->
-        <script src="assets/script.js"></script>
+        <script src="../assets/script.js"></script>
     </body>
 </html>

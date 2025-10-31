@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pavers & Decking | Baja Pools - Pool Contractor</title>
+        <title>Exterior Design | Baja Pools - Pool Contractor</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="assets/output.css" />
+        <link rel="stylesheet" href="../assets/output.css" />
         <link
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
@@ -12,11 +12,7 @@
     </head>
 
     <body>
-        <!-- =================================================== -->
-        <!-- HEADER (MODIFICADO PARA ESTA PÁGINA) -->
-        <!-- =================================================== -->
         <nav class="flex flex-col bg-white z-999 relative">
-            <!-- Barra superior de contacto -->
             <div
                 class="hidden xl:flex justify-between items-center text-black py-2 border-b border-b-primary-color"
             >
@@ -52,7 +48,6 @@
                 <div></div>
                 <a href="" class="flex items-center">
                     <i
-                        class_=""
                         class="bx bxl-facebook-square text-primary-color text-2xl pr-1"
                     ></i>
                     <span
@@ -73,19 +68,17 @@
                 </a>
                 <div></div>
             </div>
-            <!-- Barra de Navegación Principal -->
             <div
                 class="flex justify-between items-center text-black py-4 px-4 xl:px-8 2xl:px-16 bg-white drop-shadow-md"
             >
                 <a href="index.html">
                     <img
-                        src="/assets/imgs/logo.svg"
+                        src="../assets/imgs/logo.svg"
                         alt="logo baja pools"
                         class="w-52 h-16 object-cover hover:scale-105 transition-transform"
                     />
                 </a>
 
-                <!-- Navegación de Escritorio -->
                 <ul
                     class="hidden md:flex items-center gap-4 xl:gap-8 2xl:gap-16 font-semibold"
                 >
@@ -97,18 +90,17 @@
                     <li
                         class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
                     >
-                        <a href="about.html">About Us</a>
+                        <a href="about-us.html">About Us</a>
                     </li>
-                    <!-- Menú Desplegable de Servicios -->
                     <li
-                        class="p-3 text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl group relative z-40"
+                        class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl group relative z-40"
                     >
                         <a href="services.html">Services</a>
                         <i
                             class="bx bx-chevron-down text-black group-hover:text-primary-color"
                         ></i>
                         <div
-                            class="absolute w-60 text-xl bg-white text-black -left-6 top-full z-50 shadow-lg opacity-0 hidden group-hover:opacity-100 group-hover:block transition duration-300 ease-in-out"
+                            class="absolute w-3xs text-xl bg-white text-black -left-6 top-full z-50 shadow-lg opacity-0 hidden group-hover:opacity-100 group-hover:block transition duration-300 ease-in-out"
                         >
                             <ul>
                                 <li
@@ -119,10 +111,9 @@
                                     >
                                 </li>
                                 <li
-                                    class="py-2 px-4 bg-gray-100 text-primary-color transition-colors"
+                                    class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
                                 >
-                                    <a href="pavers.html">Pavers & Decking</a>
-                                    <!-- Página Actual -->
+                                    <a href="pavers.html">Pavers</a>
                                 </li>
                                 <li
                                     class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
@@ -163,12 +154,12 @@
                     <li
                         class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
                     >
-                        Our Projects
+                        <a href="our-gallery.html">Our Projects</a>
                     </li>
                     <li
                         class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
                     >
-                        Contact Us
+                        <a href="contact.html">Contact Us</a>
                     </li>
                 </ul>
                 <button
@@ -177,7 +168,6 @@
                     SCHEDULE FREE CONSULTATION
                     <i class="bx bx-calendar-alt text-2xl"></i>
                 </button>
-                <!-- Menú Móvil -->
                 <i
                     class="bx bx-menu md:hidden! text-5xl text-primary-color cursor-pointer"
                     onclick="toggleMenuState()"
@@ -195,7 +185,7 @@
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
                         >
-                            <a href="about.html">About Us</a>
+                            <a href="about-us.html">About Us</a>
                         </li>
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
@@ -205,24 +195,21 @@
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
                         >
-                            <a href="#">Our Projects</a>
+                            <a href="our-gallery.html">Our Projects</a>
                         </li>
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
                         >
-                            <a href="#">Contact Us</a>
+                            <a href="contact.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- =================================================== -->
-        <!-- HEADER DE PÁGINA (Específico del Servicio) -->
-        <!-- =================================================== -->
         <header
             class="relative h-64 md:h-80 bg-cover bg-center"
-            style="background-image: url('assets/imgs/paver-1.webp')"
+            style="background-image: url('../assets/imgs/exterior-1.webp')"
         >
             <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
             <div
@@ -231,22 +218,18 @@
                 <h1
                     class="font-orbitron text-white font-bold text-4xl md:text-6xl uppercase tracking-wide"
                 >
-                    Pavers & Pool Decking
+                    Exterior Design
                 </h1>
                 <p
                     class="font-nunito text-gray-200 text-lg md:text-xl mt-4 max-w-2xl"
                 >
-                    The perfect foundation for your backyard oasis, combining
-                    beauty, safety, and durability.
+                    A cohesive vision that unites your pool, patio, and
+                    landscape into a single, stunning space.
                 </p>
             </div>
         </header>
 
-        <!-- =================================================== -->
-        <!-- CONTENIDO PRINCIPAL -->
-        <!-- =================================================== -->
         <main>
-            <!-- Sección 1: Introducción al Servicio -->
             <section class="py-16 bg-white">
                 <div
                     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap-reverse md:flex-nowrap items-center gap-12"
@@ -255,80 +238,77 @@
                         <h2
                             class="font-orbitron text-gray-900 font-bold text-4xl uppercase mb-4"
                         >
-                            The Foundation of Your Oasis
+                            A Holistic Design Approach
                         </h2>
                         <div class="w-24 h-1 bg-primary-color mb-6"></div>
                         <div
                             class="font-nunito text-lg text-gray-700 space-y-4"
                         >
                             <p>
-                                A pool deck is more than just a surface; it's
-                                the stage that frames your pool and connects
-                                your home to your new outdoor living space. At
-                                Baja Pools, we create stunning, durable, and
-                                non-slip decks using the highest quality pavers.
+                                A world-class backyard is more than just a pool.
+                                It's a complete, integrated environment where
+                                every element works in harmony. Our exterior
+                                design service focuses on creating that cohesive
+                                vision for your entire San Diego property.
                             </p>
                             <p>
-                                Our expert installation ensures a perfectly
-                                level, stable, and long-lasting foundation that
-                                resists the harsh San Diego sun and heavy foot
-                                traffic. We prepare a compacted base and set
-                                each paver with precision for a flawless finish.
+                                We don't just build features; we design
+                                experiences. We consider how you'll move through
+                                the space, where you'll entertain, and how the
+                                landscape will complement the architecture of
+                                your home.
                             </p>
                             <ul class="list-disc list-inside space-y-2">
                                 <li>
                                     <strong class="font-semibold"
-                                        >Safe & Non-Slip:</strong
+                                        >Seamless Integration:</strong
                                     >
-                                    Textured surfaces for maximum safety around
-                                    wet areas.
+                                    Connecting your home, pool, patio, and
+                                    garden.
                                 </li>
                                 <li>
                                     <strong class="font-semibold"
-                                        >Durable & Long-Lasting:</strong
+                                        >Maximize Usability:</strong
                                     >
-                                    Resistant to cracking, fading, and staining.
+                                    Creating functional zones for dining,
+                                    relaxing, and playing.
                                 </li>
                                 <li>
                                     <strong class="font-semibold"
-                                        >Low Maintenance:</strong
+                                        >Unified Aesthetics:</strong
                                     >
-                                    Easy to clean and individual pavers can be
-                                    replaced if needed.
+                                    Ensuring materials, colors, and styles are
+                                    consistent.
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="w-full md:w-1/2">
                         <img
-                            src="assets/imgs/paver-1.webp"
-                            alt="Beautiful paver pool deck"
+                            src="../assets/imgs/exterior-2.jpeg"
+                            alt="Beautifully designed exterior space"
                             class="w-full h-auto md:h-[500px] object-cover rounded-lg shadow-xl"
                         />
                     </div>
                 </div>
             </section>
 
-            <!-- Sección 2: Opciones de Materiales (Nueva) -->
             <section class="py-16 bg-gray-50">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <!-- Título -->
                     <div class="text-center mb-12">
                         <h2
                             class="text-4xl font-bold text-gray-900 font-orbitron tracking-wide uppercase"
                         >
-                            Our Decking Materials
+                            Elements of Our Designs
                         </h2>
                         <div
                             class="w-36 h-1 bg-primary-color mx-auto mt-4"
                         ></div>
                     </div>
 
-                    <!-- Contenedor de 3 Columnas -->
                     <div class="flex flex-wrap justify-center gap-8 lg:gap-6">
-                        <!-- Columna 1: Interlocking Pavers -->
                         <div
-                            class="flex-1 basis-full md:basis-[45%] lg:basis-[30%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
+                            class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
                         >
                             <i
                                 class="bx bxs-grid text-6xl text-primary-color"
@@ -336,21 +316,19 @@
                             <h4
                                 class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
                             >
-                                Interlocking Pavers
+                                Hardscaping
                             </h4>
                             <p
                                 class="font-nunito text-gray-700 text-base leading-relaxed"
                             >
-                                The industry standard for durability and value.
-                                Available in a vast array of shapes, colors, and
-                                textures to mimic stone or create modern
-                                patterns.
+                                The foundation. This includes your pool deck,
+                                patios, walkways, retaining walls, and any stone
+                                or paver surfaces.
                             </p>
                         </div>
 
-                        <!-- Columna 2: Natural Stone -->
                         <div
-                            class="flex-1 basis-full md:basis-[45%] lg:basis-[30%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
+                            class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
                         >
                             <i
                                 class="bx bx-leaf text-6xl text-primary-color"
@@ -358,148 +336,162 @@
                             <h4
                                 class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
                             >
-                                Natural Stone
+                                Softscaping
                             </h4>
                             <p
                                 class="font-nunito text-gray-700 text-base leading-relaxed"
                             >
-                                For a luxury look, we install Travertine and
-                                Flagstone. Travertine stays cool to the touch,
-                                making it a perfect choice for San Diego's sunny
-                                climate.
+                                The living elements. We help select and place
+                                drought-tolerant plants, trees, shrubs, and turf
+                                to add color, texture, and privacy.
                             </p>
                         </div>
 
-                        <!-- Columna 3: Porcelain Pavers -->
                         <div
-                            class="flex-1 basis-full md:basis-[45%] lg:basis-[30%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
+                            class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
                         >
                             <i
-                                class="bx bxs-layer text-6xl text-primary-color"
+                                class="bx bxs-bulb text-6xl text-primary-color"
                             ></i>
                             <h4
                                 class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
                             >
-                                Porcelain Pavers
+                                Landscape Lighting
                             </h4>
                             <p
                                 class="font-nunito text-gray-700 text-base leading-relaxed"
                             >
-                                A modern, high-tech option that offers a sleek,
-                                uniform look with incredible stain resistance
-                                and durability. Ideal for clean, contemporary
-                                designs.
+                                Essential for ambiance and safety. We design
+                                low-voltage lighting systems that highlight
+                                trees, pathways, and water features.
+                            </p>
+                        </div>
+
+                        <div
+                            class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
+                        >
+                            <i
+                                class="bx bxs-arch text-6xl text-primary-color"
+                            ></i>
+                            <h4
+                                class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
+                            >
+                                Shade Structures
+                            </h4>
+                            <p
+                                class="font-nunito text-gray-700 text-base leading-relaxed"
+                            >
+                                We can design and build pergolas, patio covers,
+                                and other shade structures to create
+                                comfortable, usable space out of the sun.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Sección 3: Diseño y Características (Nueva) -->
             <section class="py-16 bg-white">
                 <div
-                    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap md:flex-nowrap items-center gap-12"
+                    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap-reverse md:flex-nowrap items-center gap-12"
                 >
-                    <div class="w-full md:w-1/2">
-                        <img
-                            src="assets/imgs/exterior-1.webp"
-                            alt="Paver design patterns and coping"
-                            class="w-full h-auto md:h-[500px] object-cover rounded-lg shadow-xl"
-                        />
-                    </div>
                     <div class="w-full md:w-1/2">
                         <h2
                             class="font-orbitron text-gray-900 font-bold text-4xl uppercase mb-4"
                         >
-                            Design & Features
+                            See It Before We Build It
                         </h2>
                         <div class="w-24 h-1 bg-primary-color mb-6"></div>
                         <div
                             class="font-nunito text-lg text-gray-700 space-y-4"
                         >
                             <p>
-                                The design is in the details. Our team helps you
-                                select the perfect paver and pattern—from
-                                classic running bond to intricate herringbone—to
-                                complement your home's architecture.
+                                The most important part of our design process is
+                                our advanced 3D modeling. We don't just ask you
+                                to imagine your new backyard—we show it to you.
                             </p>
                             <p>
-                                We go beyond the flat surfaces to build a
-                                complete, integrated hardscape.
+                                Our designers will create a photorealistic 3D
+                                render of your entire property, allowing you to
+                                take a virtual tour. You can see how the morning
+                                sun hits the water, how the landscape lighting
+                                will look at night, and make changes to
+                                materials or layouts with confidence.
                             </p>
                             <ul class="list-disc list-inside space-y-2">
                                 <li>
                                     <strong class="font-semibold"
-                                        >Custom Coping:</strong
+                                        >Make Confident Decisions:</strong
                                     >
-                                    The "bullnose" or cantilevered edge of your
-                                    pool, perfectly matched to your deck.
+                                    Change paver colors or plant sizes
+                                    virtually.
                                 </li>
                                 <li>
                                     <strong class="font-semibold"
-                                        >Steps & Raised Patios:</strong
+                                        >Ensure Perfect Flow:</strong
                                     >
-                                    We build beautiful, safe steps and raised
-                                    patio areas for multi-level backyards.
+                                    Verify that pathways are wide enough and
+                                    seating areas feel right.
                                 </li>
                                 <li>
                                     <strong class="font-semibold"
-                                        >Integrated Lighting:</strong
+                                        >A Clear Blueprint:</strong
                                     >
-                                    Add subtle hardscape lighting for ambiance
-                                    and safety at night.
+                                    The final 3D model becomes the exact plan
+                                    our construction team follows.
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <div class="w-full md:w-1/2">
+                        <img
+                            src="../assets/imgs/pool-10.jpeg"
+                            alt="3D rendering of a backyard design"
+                            class="w-full h-auto md:h-[500px] object-cover rounded-lg shadow-xl"
+                        />
+                    </div>
                 </div>
             </section>
 
-            <!-- Sección 4: Galería (Nueva) -->
             <section class="py-16 bg-gray-50">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <!-- Título -->
                     <div class="text-center mb-12">
                         <h2
                             class="text-4xl font-bold text-gray-900 font-orbitron tracking-wide uppercase"
                         >
-                            Paver Project Showcase
+                            Integrated Design Showcase
                         </h2>
                         <div
                             class="w-36 h-1 bg-primary-color mx-auto mt-4"
                         ></div>
                     </div>
-                    <!-- Grilla de Imágenes -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                         <img
-                            src="assets/imgs/paver-1.webp"
-                            alt="Modern paver deck with clean lines"
+                            src="../assets/imgs/exterior-1.webp"
+                            alt="Backyard design with cohesive paver and pool"
                             class="w-full h-96 object-cover rounded-lg shadow-xl"
                         />
                         <img
-                            src="assets/imgs/exterior-1.webp"
-                            alt="Natural stone travertine decking"
+                            src="../assets/imgs/pool-5.webp"
+                            alt="Complete exterior project with lighting"
                             class="w-full h-96 object-cover rounded-lg shadow-xl"
                         />
                         <img
-                            src="assets/imgs/pool-remodel-1.webp"
-                            alt="Pool coping and paver combination"
+                            src="../assets/imgs/after.jpeg"
+                            alt="Full backyard remodel with pool and patio"
                             class="w-full h-96 object-cover rounded-lg shadow-xl"
                         />
                         <img
-                            src="assetsServices.html/imgs/pool-11.jpeg"
-                            alt="Backyard patio with matching pool deck pavers"
+                            src="../assets/imgs/exterior-2.jpeg"
+                            alt="Modern landscape design integrated with home"
                             class="w-full h-96 object-cover rounded-lg shadow-xl"
-                            onerror="this.src='https://via.placeholder.com/600x400.png/0284C7/FFFFFF?text=Baja+Pools+Project'"
                         />
                     </div>
                 </div>
             </section>
 
-            <!-- Sección CTA (Reutilizada) -->
             <section
                 class="relative py-20 bg-cover bg-center"
-                style="background-image: url('assets/imgs/after.jpeg')"
+                style="background-image: url('../assets/imgs/exterior-2.jpeg')"
             >
                 <div class="absolute inset-0 bg-black opacity-70 z-10"></div>
                 <div
@@ -508,14 +500,14 @@
                     <h2
                         class="font-orbitron text-white font-bold text-3xl md:text-4xl uppercase tracking-wide"
                     >
-                        Ready to design your deck?
+                        Let's Design Your Complete Vision
                     </h2>
                     <p
                         class="font-nunito text-gray-200 text-lg leading-relaxed"
                     >
-                        Let us show you the possibilities. Our team can help you
-                        choose the perfect material and design to complement
-                        your pool and home. Contact us for a free consultation.
+                        Don't just build a pool, build an oasis. Our design team
+                        is ready to help you plan every square foot of your
+                        backyard, from the water's edge to your property line.
                     </p>
                     <a
                         href="#"
@@ -528,30 +520,26 @@
             </section>
         </main>
 
-        <!-- =================================================== -->
-        <!-- FOOTER (Igual a las otras páginas) -->
-        <!-- =================================================== -->
         <footer
             class="bg-black text-gray-300 border-t-4 border-primarbg-primary-color text-lg"
         >
             <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div class="flex flex-wrap justify-between gap-4">
-                    <!-- Columna 1: Logo y Descripción -->
                     <div class="w-full xl:w-1/2 xl:basis-[28%]">
                         <img
                             class="h-48 lg:h-36 object-cover mb-5 w-auto m-auto"
-                            src="assets/imgs/logo.svg"
+                            src="../assets/imgs/logo.svg"
                             alt="Logo Baja Pools"
                         />
+
                         <p class="text-lg leading-relaxed">
                             Baja Pools specializes in premium pool solutions in
                             San Diego County. With an unwavering commitment to
-                            quality and customer satisfaction, we transform
+                            quality and customer satisfaction, we transform _
                             homes with durable, high-quality pools.
                         </p>
                     </div>
 
-                    <!-- Columna 2: Quick Links -->
                     <div class="w-full xl:w-1/2 xl:basis-[16%]">
                         <h3
                             class="text-lg font-orbitron font-semibold text-white"
@@ -583,14 +571,14 @@
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="our-gallery.html"
                                     class="hover:text-sky-400 transition-colors duration-200"
                                     >Our Projects</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="contact.html"
                                     class="hover:text-sky-400 transition-colors duration-200"
                                     >Contact Us</a
                                 >
@@ -598,7 +586,6 @@
                         </ul>
                     </div>
 
-                    <!-- Columna 3: Contact Us -->
                     <div class="w-full xl:w-1/2 xl:basis-[16%]">
                         <h3
                             class="text-lg font-semibold text-white font-orbitron"
@@ -634,13 +621,12 @@
                         </div>
                     </div>
 
-                    <!-- Columna 4: Mapa -->
                     <div
                         class="w-full md:w-1/2 xl:basis-[24%] min-h-[200px] md:min-h-0"
                     >
                         <iframe
                             class="w-full h-full rounded-md border-0"
-                            src="https://www.google.com/maps/embed?pb=!1m18!m12!1m3!1d214691.8969865193!2d-117.2757271501237!3d32.74952800181318!2m3!1f0!2f0!3f0!3m2!1i1024!i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%2C%2C%20CA%2C%20USA!5e0!3m2!1sen!2smx!4v1678886053088!5m2!1sen!2smx"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214691.8969865193!2d-117.2757271501237!3d32.74952800181318!2m3!1f0!2f0!3f0!3m2!1i1024!i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%2C%20CA%2C%20USA!5e0!3m2!1sen!2smx!4v1678886053088!5m2!1sen!2smx"
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
@@ -649,7 +635,6 @@
                     </div>
                 </div>
 
-                <!-- Barra de Copyright -->
                 <div
                     class="border-t-2 border-primarbg-primary-color mt-10 pt-6 text-center"
                 >
@@ -661,7 +646,6 @@
             </div>
         </footer>
 
-        <!-- SCRIPT -->
-        <script src="assets/script.js"></script>
+        <script src="../assets/script.js"></script>
     </body>
 </html>

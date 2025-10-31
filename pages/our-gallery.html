@@ -4,19 +4,15 @@
         <title>Project Gallery | Baja Pools - Pool Contractor</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="assets/output.css" />
+        <link rel="stylesheet" href="../assets/output.css" />
         <link
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
         />
     </head>
 
-    <body onmouseup="stopDrag()">
-        <!-- =================================================== -->
-        <!-- HEADER (MODIFICADO PARA ESTA PÁGINA) -->
-        <!-- =================================================== -->
+    <body>
         <nav class="flex flex-col bg-white z-999 relative">
-            <!-- Barra superior de contacto -->
             <div
                 class="hidden xl:flex justify-between items-center text-black py-2 border-b border-b-primary-color"
             >
@@ -52,7 +48,6 @@
                 <div></div>
                 <a href="" class="flex items-center">
                     <i
-                        class_=""
                         class="bx bxl-facebook-square text-primary-color text-2xl pr-1"
                     ></i>
                     <span
@@ -73,19 +68,17 @@
                 </a>
                 <div></div>
             </div>
-            <!-- Barra de Navegación Principal -->
             <div
                 class="flex justify-between items-center text-black py-4 px-4 xl:px-8 2xl:px-16 bg-white drop-shadow-md"
             >
                 <a href="index.html">
                     <img
-                        src="/assets/imgs/logo.svg"
+                        src="../assets/imgs/logo.svg"
                         alt="logo baja pools"
                         class="w-52 h-16 object-cover hover:scale-105 transition-transform"
                     />
                 </a>
 
-                <!-- Navegación de Escritorio -->
                 <ul
                     class="hidden md:flex items-center gap-4 xl:gap-8 2xl:gap-16 font-semibold"
                 >
@@ -97,9 +90,8 @@
                     <li
                         class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
                     >
-                        <a href="about.html">About Us</a>
+                        <a href="about-us.html">About Us</a>
                     </li>
-                    <!-- Menú Desplegable de Servicios -->
                     <li
                         class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl group relative z-40"
                     >
@@ -108,7 +100,7 @@
                             class="bx bx-chevron-down text-black group-hover:text-primary-color"
                         ></i>
                         <div
-                            class="absolute w-60 text-xl bg-white text-black -left-6 top-full z-50 shadow-lg opacity-0 hidden group-hover:opacity-100 group-hover:block transition duration-300 ease-in-out"
+                            class="absolute w-3xs text-xl bg-white text-black -left-6 top-full z-50 shadow-lg opacity-0 hidden group-hover:opacity-100 group-hover:block transition duration-300 ease-in-out"
                         >
                             <ul>
                                 <li
@@ -121,7 +113,7 @@
                                 <li
                                     class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
                                 >
-                                    <a href="pavers.html">Pavers & Decking</a>
+                                    <a href="pavers.html">Pavers</a>
                                 </li>
                                 <li
                                     class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
@@ -160,15 +152,14 @@
                         </div>
                     </li>
                     <li
-                        class="p-3 text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
+                        class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
                     >
-                        <a href="our-projects.html">Our Projects</a>
-                        <!-- Página Actual -->
+                        <a href="our-gallery.html">Our Projects</a>
                     </li>
                     <li
                         class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
                     >
-                        Contact Us
+                        <a href="contact.html">Contact Us</a>
                     </li>
                 </ul>
                 <button
@@ -177,7 +168,6 @@
                     SCHEDULE FREE CONSULTATION
                     <i class="bx bx-calendar-alt text-2xl"></i>
                 </button>
-                <!-- Menú Móvil -->
                 <i
                     class="bx bx-menu md:hidden! text-5xl text-primary-color cursor-pointer"
                     onclick="toggleMenuState()"
@@ -195,7 +185,7 @@
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
                         >
-                            <a href="about.html">About Us</a>
+                            <a href="about-us.html">About Us</a>
                         </li>
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
@@ -205,24 +195,21 @@
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
                         >
-                            <a href="our-projects.html">Our Projects</a>
+                            <a href="our-gallery.html">Our Projects</a>
                         </li>
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
                         >
-                            <a href="#">Contact Us</a>
+                            <a href="contact.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- =================================================== -->
-        <!-- HEADER DE PÁGINA -->
-        <!-- =================================================== -->
         <header
             class="relative h-64 md:h-80 bg-cover bg-center"
-            style="background-image: url('assets/imgs/after.jpeg')"
+            style="background-image: url('../assets/imgs/after.jpeg')"
         >
             <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
             <div
@@ -242,14 +229,9 @@
             </div>
         </header>
 
-        <!-- =================================================== -->
-        <!-- CONTENIDO PRINCIPAL -->
-        <!-- =================================================== -->
         <main>
-            <!-- Sección 1: Galería Filtrable (Nueva) -->
             <section class="py-16 bg-white">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <!-- Controles de Filtro -->
                     <div
                         id="filter-container"
                         class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12"
@@ -292,18 +274,16 @@
                         </button>
                     </div>
 
-                    <!-- Grilla de Proyectos -->
                     <div
                         id="project-grid"
                         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
                     >
-                        <!-- Proyecto 1 -->
                         <div
                             class="project-item relative rounded-lg shadow-lg overflow-hidden"
                             data-category="pools"
                         >
                             <img
-                                src="assets/imgs/pool-1.jpeg"
+                                src="../assets/imgs/pool-1.jpeg"
                                 alt="Modern Pool Installation"
                                 class="w-full h-80 object-cover"
                             />
@@ -316,13 +296,12 @@
                                 >
                             </div>
                         </div>
-                        <!-- Proyecto 2 -->
                         <div
                             class="project-item relative rounded-lg shadow-lg overflow-hidden"
                             data-category="remodels"
                         >
                             <img
-                                src="assets/imgs/after.jpeg"
+                                src="../assets/imgs/after.jpeg"
                                 alt="Pool Remodel After"
                                 class="w-full h-80 object-cover"
                             />
@@ -335,13 +314,12 @@
                                 >
                             </div>
                         </div>
-                        <!-- Proyecto 3 -->
                         <div
                             class="project-item relative rounded-lg shadow-lg overflow-hidden"
                             data-category="pavers"
                         >
                             <img
-                                src="assets/imgs/paver-1.webp"
+                                src="../assets/imgs/paver-1.webp"
                                 alt="Travertine Paver Deck"
                                 class="w-full h-80 object-cover"
                             />
@@ -354,13 +332,12 @@
                                 >
                             </div>
                         </div>
-                        <!-- Proyecto 4 -->
                         <div
                             class="project-item relative rounded-lg shadow-lg overflow-hidden"
                             data-category="bbqs"
                         >
                             <img
-                                src="assets/imgs/bbq-1.webp"
+                                src="../assets/imgs/bbq-1.webp"
                                 alt="Custom BBQ Island"
                                 class="w-full h-80 object-cover"
                             />
@@ -373,13 +350,12 @@
                                 >
                             </div>
                         </div>
-                        <!-- Proyecto 5 -->
                         <div
                             class="project-item relative rounded-lg shadow-lg overflow-hidden"
                             data-category="exterior"
                         >
                             <img
-                                src="assets/imgs/exterior-1.webp"
+                                src="../assets/imgs/exterior-1.webp"
                                 alt="Complete Exterior Design"
                                 class="w-full h-80 object-cover"
                             />
@@ -392,13 +368,12 @@
                                 >
                             </div>
                         </div>
-                        <!-- Proyecto 6 -->
                         <div
                             class="project-item relative rounded-lg shadow-lg overflow-hidden"
                             data-category="pools"
                         >
                             <img
-                                src="assets/imgs/pool-5.webp"
+                                src="../assets/imgs/pool-5.webp"
                                 alt="Pool with Water Feature"
                                 class="w-full h-80 object-cover"
                             />
@@ -411,13 +386,12 @@
                                 >
                             </div>
                         </div>
-                        <!-- Proyecto 7 -->
                         <div
                             class="project-item relative rounded-lg shadow-lg overflow-hidden"
                             data-category="bbqs"
                         >
                             <img
-                                src="assets/imgs/firepit-1.jpeg"
+                                src="../assets/imgs/firepit-1.jpeg"
                                 alt="Cozy Fire Pit"
                                 class="w-full h-80 object-cover"
                             />
@@ -430,13 +404,12 @@
                                 >
                             </div>
                         </div>
-                        <!-- Proyecto 8 -->
                         <div
                             class="project-item relative rounded-lg shadow-lg overflow-hidden"
                             data-category="remodels"
                         >
                             <img
-                                src="assets/imgs/pool-remodel-1.webp"
+                                src="../assets/imgs/pool-remodel-1.webp"
                                 alt="Pool Resurfacing"
                                 class="w-full h-80 object-cover"
                             />
@@ -449,13 +422,12 @@
                                 >
                             </div>
                         </div>
-                        <!-- Proyecto 9 -->
                         <div
                             class="project-item relative rounded-lg shadow-lg overflow-hidden"
                             data-category="pavers"
                         >
                             <img
-                                src="assets/imgs/paver-2.jpeg"
+                                src="../assets/imgs/paver-2.jpeg"
                                 alt="Paver Driveway"
                                 class="w-full h-80 object-cover"
                             />
@@ -472,10 +444,8 @@
                 </div>
             </section>
 
-            <!-- Sección 2: Testimonios (Nueva) -->
             <section class="py-16 bg-gray-50">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <!-- Título -->
                     <div class="text-center mb-12">
                         <h2
                             class="text-4xl font-bold text-gray-900 font-orbitron tracking-wide uppercase"
@@ -487,9 +457,7 @@
                         ></div>
                     </div>
 
-                    <!-- Contenedor de 3 Testimonios -->
                     <div class="flex flex-wrap justify-center gap-8 lg:gap-6">
-                        <!-- Testimonio 1 -->
                         <div
                             class="flex-1 basis-full md:basis-[45%] lg:basis-[30%] max-w-sm p-8 bg-white rounded-lg shadow-xl"
                         >
@@ -518,7 +486,6 @@
                             </p>
                         </div>
 
-                        <!-- Testimonio 2 -->
                         <div
                             class="flex-1 basis-full md:basis-[45%] lg:basis-[30%] max-w-sm p-8 bg-white rounded-lg shadow-xl"
                         >
@@ -547,7 +514,6 @@
                             </p>
                         </div>
 
-                        <!-- Testimonio 3 -->
                         <div
                             class="flex-1 basis-full md:basis-[45%] lg:basis-[30%] max-w-sm p-8 bg-white rounded-lg shadow-xl"
                         >
@@ -579,10 +545,9 @@
                 </div>
             </section>
 
-            <!-- Sección CTA (Reutilizada) -->
             <section
                 class="relative py-20 bg-cover bg-center"
-                style="background-image: url('assets/imgs/pool-5.webp')"
+                style="background-image: url('../assets/imgs/pool-5.webp')"
             >
                 <div class="absolute inset-0 bg-black opacity-70 z-10"></div>
                 <div
@@ -611,31 +576,26 @@
                 </div>
             </section>
         </main>
-
-        <!-- =================================================== -->
-        <!-- FOOTER (Igual a las otras páginas) -->
-        <!-- =================================================== -->
         <footer
             class="bg-black text-gray-300 border-t-4 border-primarbg-primary-color text-lg"
         >
             <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div class="flex flex-wrap justify-between gap-4">
-                    <!-- Columna 1: Logo y Descripción -->
                     <div class="w-full xl:w-1/2 xl:basis-[28%]">
                         <img
                             class="h-48 lg:h-36 object-cover mb-5 w-auto m-auto"
-                            src="assets/imgs/logo.svg"
+                            src="../assets/imgs/logo.svg"
                             alt="Logo Baja Pools"
                         />
+
                         <p class="text-lg leading-relaxed">
                             Baja Pools specializes in premium pool solutions in
                             San Diego County. With an unwavering commitment to
-                            quality and customer satisfaction, we transform
+                            quality and customer satisfaction, we transform _
                             homes with durable, high-quality pools.
                         </p>
                     </div>
 
-                    <!-- Columna 2: Quick Links -->
                     <div class="w-full xl:w-1/2 xl:basis-[16%]">
                         <h3
                             class="text-lg font-orbitron font-semibold text-white"
@@ -667,14 +627,14 @@
                             </li>
                             <li>
                                 <a
-                                    href="our-projects.html"
+                                    href="our-gallery.html"
                                     class="hover:text-sky-400 transition-colors duration-200"
                                     >Our Projects</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="contact.html"
                                     class="hover:text-sky-400 transition-colors duration-200"
                                     >Contact Us</a
                                 >
@@ -682,7 +642,6 @@
                         </ul>
                     </div>
 
-                    <!-- Columna 3: Contact Us -->
                     <div class="w-full xl:w-1/2 xl:basis-[16%]">
                         <h3
                             class="text-lg font-semibold text-white font-orbitron"
@@ -718,13 +677,12 @@
                         </div>
                     </div>
 
-                    <!-- Columna 4: Mapa -->
                     <div
                         class="w-full md:w-1/2 xl:basis-[24%] min-h-[200px] md:min-h-0"
                     >
                         <iframe
                             class="w-full h-full rounded-md border-0"
-                            src="https://www.google.com/maps/embed?pb=!1m18!m12!1m3!1d214691.8969865193!2d-117.2757271501237!3d32.74952800181318!2m3!1f0!2f0!3f0!3m2!1i1024!i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%2C%2C%20CA%2C%20USA!5e0!3m2!1sen!2smx!4v1678886053088!5m2!1sen!2smx"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214691.8969865193!2d-117.2757271501237!3d32.74952800181318!2m3!1f0!2f0!3f0!3m2!1i1024!i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%2C%20CA%2C%20USA!5e0!3m2!1sen!2smx!4v1678886053088!5m2!1sen!2smx"
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
@@ -733,7 +691,6 @@
                     </div>
                 </div>
 
-                <!-- Barra de Copyright -->
                 <div
                     class="border-t-2 border-primarbg-primary-color mt-10 pt-6 text-center"
                 >
@@ -745,7 +702,6 @@
             </div>
         </footer>
 
-        <!-- SCRIPT -->
-        <script src="assets/script.js"></script>
+        <script src="../assets/script.js"></script>
     </body>
 </html>

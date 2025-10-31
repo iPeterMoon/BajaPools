@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pool Remodeling | Baja Pools - Pool Contractor</title>
+        <title>Block Walls | Baja Pools - Pool Contractor</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="assets/output.css" />
+        <link rel="stylesheet" href="../assets/output.css" />
         <link
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
         />
     </head>
 
-    <body onmouseup="stopDrag()">
-        <!-- =================================================== -->
-        <!-- HEADER (MODIFICADO PARA ESTA PÁGINA) -->
-        <!-- =================================================== -->
+    <body>
         <nav class="flex flex-col bg-white z-999 relative">
-            <!-- Barra superior de contacto -->
             <div
                 class="hidden xl:flex justify-between items-center text-black py-2 border-b border-b-primary-color"
             >
@@ -52,7 +48,6 @@
                 <div></div>
                 <a href="" class="flex items-center">
                     <i
-                        class_=""
                         class="bx bxl-facebook-square text-primary-color text-2xl pr-1"
                     ></i>
                     <span
@@ -73,19 +68,17 @@
                 </a>
                 <div></div>
             </div>
-            <!-- Barra de Navegación Principal -->
             <div
                 class="flex justify-between items-center text-black py-4 px-4 xl:px-8 2xl:px-16 bg-white drop-shadow-md"
             >
                 <a href="index.html">
                     <img
-                        src="/assets/imgs/logo.svg"
+                        src="../assets/imgs/logo.svg"
                         alt="logo baja pools"
                         class="w-52 h-16 object-cover hover:scale-105 transition-transform"
                     />
                 </a>
 
-                <!-- Navegación de Escritorio -->
                 <ul
                     class="hidden md:flex items-center gap-4 xl:gap-8 2xl:gap-16 font-semibold"
                 >
@@ -97,18 +90,17 @@
                     <li
                         class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
                     >
-                        <a href="about.html">About Us</a>
+                        <a href="about-us.html">About Us</a>
                     </li>
-                    <!-- Menú Desplegable de Servicios -->
                     <li
-                        class="p-3 text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl group relative z-40"
+                        class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl group relative z-40"
                     >
                         <a href="services.html">Services</a>
                         <i
                             class="bx bx-chevron-down text-black group-hover:text-primary-color"
                         ></i>
                         <div
-                            class="absolute w-60 text-xl bg-white text-black -left-6 top-full z-50 shadow-lg opacity-0 hidden group-hover:opacity-100 group-hover:block transition duration-300 ease-in-out"
+                            class="absolute w-3xs text-xl bg-white text-black -left-6 top-full z-50 shadow-lg opacity-0 hidden group-hover:opacity-100 group-hover:block transition duration-300 ease-in-out"
                         >
                             <ul>
                                 <li
@@ -121,15 +113,14 @@
                                 <li
                                     class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
                                 >
-                                    <a href="pavers.html">Pavers & Decking</a>
+                                    <a href="pavers.html">Pavers</a>
                                 </li>
                                 <li
-                                    class="py-2 px-4 bg-gray-100 text-primary-color transition-colors"
+                                    class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
                                 >
                                     <a href="pool-remodeling.html"
                                         >Pool Remodeling</a
                                     >
-                                    <!-- Página Actual -->
                                 </li>
                                 <li
                                     class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
@@ -163,12 +154,12 @@
                     <li
                         class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
                     >
-                        Our Projects
+                        <a href="our-gallery.html">Our Projects</a>
                     </li>
                     <li
                         class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
                     >
-                        Contact Us
+                        <a href="contact.html">Contact Us</a>
                     </li>
                 </ul>
                 <button
@@ -177,7 +168,6 @@
                     SCHEDULE FREE CONSULTATION
                     <i class="bx bx-calendar-alt text-2xl"></i>
                 </button>
-                <!-- Menú Móvil -->
                 <i
                     class="bx bx-menu md:hidden! text-5xl text-primary-color cursor-pointer"
                     onclick="toggleMenuState()"
@@ -195,7 +185,7 @@
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
                         >
-                            <a href="about.html">About Us</a>
+                            <a href="about-us.html">About Us</a>
                         </li>
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
@@ -205,24 +195,21 @@
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
                         >
-                            <a href="#">Our Projects</a>
+                            <a href="our-gallery.html">Our Projects</a>
                         </li>
                         <li
                             class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
                         >
-                            <a href="#">Contact Us</a>
+                            <a href="contact.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- =================================================== -->
-        <!-- HEADER DE PÁGINA (Específico del Servicio) -->
-        <!-- =================================================== -->
         <header
             class="relative h-64 md:h-80 bg-cover bg-center"
-            style="background-image: url('assets/imgs/pool-remodel-1.webp')"
+            style="background-image: url('../assets/imgs/block-1.jpeg')"
         >
             <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
             <div
@@ -231,22 +218,18 @@
                 <h1
                     class="font-orbitron text-white font-bold text-4xl md:text-6xl uppercase tracking-wide"
                 >
-                    Pool Remodeling
+                    Block Walls
                 </h1>
                 <p
                     class="font-nunito text-gray-200 text-lg md:text-xl mt-4 max-w-2xl"
                 >
-                    Transform your outdated pool into the modern oasis you've
-                    always dreamed of.
+                    Structural integrity, security, and style for your
+                    property's foundation.
                 </p>
             </div>
         </header>
 
-        <!-- =================================================== -->
-        <!-- CONTENIDO PRINCIPAL -->
-        <!-- =================================================== -->
         <main>
-            <!-- Sección 1: Introducción (Antes y Después) -->
             <section class="py-16 bg-white">
                 <div
                     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap-reverse md:flex-nowrap items-center gap-12"
@@ -255,225 +238,148 @@
                         <h2
                             class="font-orbitron text-gray-900 font-bold text-4xl uppercase mb-4"
                         >
-                            Why Remodel Your Pool?
+                            The Foundation of a Great Design
                         </h2>
                         <div class="w-24 h-1 bg-primary-color mb-6"></div>
                         <div
                             class="font-nunito text-lg text-gray-700 space-y-4"
                         >
                             <p>
-                                Is your pool showing its age? A remodel can do
-                                more than just update the look—it can improve
-                                safety, increase energy efficiency, and add
-                                valuable new features for your family to enjoy.
+                                Block walls are the unsung heroes of landscape
+                                design. They do the heavy lifting—literally. In
+                                San Diego County's hilly terrain, a properly
+                                engineered retaining wall is often the most
+                                critical part of a pool installation.
                             </p>
                             <p>
-                                Whether your plaster is stained, your tile is
-                                cracked, or you're simply ready for a change,
-                                our team can breathe new life into your
-                                backyard. We handle everything from simple
-                                surface upgrades to complete structural
-                                transformations.
+                                Beyond their structural importance, block walls
+                                also define spaces, provide privacy, and add
+                                beautiful, multi-level dimensions to your
+                                backyard. We build all our walls to rigorous
+                                codes for safety and longevity.
                             </p>
                             <ul class="list-disc list-inside space-y-2">
                                 <li>
                                     <strong class="font-semibold"
-                                        >Update Aesthetics:</strong
+                                        >Structural Support:</strong
                                     >
-                                    Replace dated tile and worn-out surfaces.
+                                    Engineer-approved retaining walls to create
+                                    level, usable land.
                                 </li>
                                 <li>
                                     <strong class="font-semibold"
-                                        >Boost Efficiency:</strong
+                                        >Privacy & Security:</strong
                                     >
-                                    Upgrade to variable-speed pumps and LED
-                                    lighting.
+                                    Solid perimeter walls for a secure and
+                                    secluded oasis.
                                 </li>
                                 <li>
                                     <strong class="font-semibold"
-                                        >Add New Features:</strong
+                                        >Aesthetic Finishes:</strong
                                     >
-                                    Install a spa, baja shelf, or water
-                                    features.
+                                    Finished with stucco or stone veneer to
+                                    perfectly match your home.
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <!-- Slider Antes/Después (Reutilizado de index.html) -->
-                    <div
-                        class="w-full md:w-1/2 rounded-lg shadow-lg border-4 border-primary-color"
-                    >
-                        <div
-                            id="container"
-                            class="relative w-full h-[400px] min-h-[300px] rounded-lg"
-                        >
-                            <div
-                                id="afterContainer"
-                                class="absolute w-full h-full"
-                            >
-                                <img
-                                    id="after"
-                                    class="w-full h-full object-cover"
-                                    src="assets/imgs/after.jpeg"
-                                    alt="After remodeling"
-                                />
-                            </div>
-                            <div
-                                id="beforeContainer"
-                                class="absolute w-full h-full"
-                                style="clip-path: inset(0 50% 0 0)"
-                            >
-                                <img
-                                    id="before"
-                                    class="w-full h-full object-cover"
-                                    src="assets/imgs/before.jpeg"
-                                    alt="Before remodeling"
-                                />
-                            </div>
-                            <div
-                                id="slider"
-                                onmousedown="startDrag(event)"
-                                class="flex h-full z-10 absolute top-0 gap-1 cursor-ew-resize justify-center items-center left-1/2 -translate-x-1/2 pointer-events-auto"
-                            >
-                                <i
-                                    class="bx bxs-left-arrow text-white text-xl"
-                                ></i>
-                                <div
-                                    id="slider-line"
-                                    class="w-2 h-full bg-white flex-1"
-                                ></div>
-                                <i
-                                    class="bx bxs-right-arrow text-white text-xl"
-                                ></i>
-                            </div>
-                            <div
-                                class="absolute bg-white px-4 py-2 rounded-lg shadow-md z-20 font-semibold left-5 bottom-4"
-                            >
-                                Before
-                            </div>
-                            <div
-                                class="absolute bg-white px-4 py-2 rounded-lg shadow-md z-20 font-semibold right-5 bottom-4"
-                            >
-                                After
-                            </div>
-                        </div>
+                    <div class="w-full md:w-1/2">
+                        <img
+                            src="../assets/imgs/block-2.jpeg"
+                            alt="A retaining wall under construction"
+                            class="w-full h-auto md:h-[500px] object-cover rounded-lg shadow-xl"
+                        />
                     </div>
                 </div>
             </section>
 
-            <!-- Sección 2: Opciones de Remodelación (Nueva) -->
             <section class="py-16 bg-gray-50">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <!-- Título -->
                     <div class="text-center mb-12">
                         <h2
                             class="text-4xl font-bold text-gray-900 font-orbitron tracking-wide uppercase"
                         >
-                            Our Remodeling Services
+                            Our Masonry Services
                         </h2>
                         <div
                             class="w-36 h-1 bg-primary-color mx-auto mt-4"
                         ></div>
                     </div>
 
-                    <!-- Contenedor de 4 Columnas -->
                     <div class="flex flex-wrap justify-center gap-8 lg:gap-6">
-                        <!-- Columna 1: Resurfacing -->
                         <div
-                            class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
+                            class="flex-1 basis-full md:basis-[45%] lg:basis-[30%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
                         >
                             <i
-                                class="bx bxs-paint text-6xl text-primary-color"
+                                class="bx bxs-landscape text-6xl text-primary-color"
                             ></i>
                             <h4
                                 class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
                             >
-                                Resurfacing
+                                Retaining Walls
                             </h4>
                             <p
                                 class="font-nunito text-gray-700 text-base leading-relaxed"
                             >
-                                The single biggest change. We chip out the old
-                                surface and apply a new, beautiful finish like
-                                modern pebble, quartz, or classic plaster.
+                                Essential for slopes, these engineered walls are
+                                built with deep footings and proper drainage to
+                                safely hold back soil, creating the level pad
+                                needed for your pool and patio.
                             </p>
                         </div>
 
-                        <!-- Columna 2: Tile & Coping -->
                         <div
-                            class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
+                            class="flex-1 basis-full md:basis-[45%] lg:basis-[30%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
                         >
                             <i
-                                class="bx bxs-layer text-6xl text-primary-color"
+                                class="bx bxs-shield-alt-2 text-6xl text-primary-color"
                             ></i>
                             <h4
                                 class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
                             >
-                                Tile & Coping
+                                Garden & Privacy Walls
                             </h4>
                             <p
                                 class="font-nunito text-gray-700 text-base leading-relaxed"
                             >
-                                Update your pool's "frame" with modern waterline
-                                tile and safe, stylish new coping around the
-                                edge.
+                                Define your property line and create a private,
+                                intimate setting. These walls are perfect for
+                                enclosing your backyard and reducing noise.
                             </p>
                         </div>
 
-                        <!-- Columna 3: Equipment Upgrades -->
                         <div
-                            class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
+                            class="flex-1 basis-full md:basis-[45%] lg:basis-[30%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
                         >
                             <i
-                                class="bx bxs-cog text-6xl text-primary-color"
+                                class="bx bxs-tree text-6xl text-primary-color"
                             ></i>
                             <h4
                                 class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
                             >
-                                Equipment Upgrades
+                                Seat Walls & Planters
                             </h4>
                             <p
                                 class="font-nunito text-gray-700 text-base leading-relaxed"
                             >
-                                Save money and hassle by upgrading to a
-                                variable-speed pump, saltwater system, or smart
-                                controls you can manage from your phone.
-                            </p>
-                        </div>
-
-                        <!-- Columna 4: Feature Additions -->
-                        <div
-                            class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
-                        >
-                            <i
-                                class="bx bxs-magic-wand text-6xl text-primary-color"
-                            ></i>
-                            <h4
-                                class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
-                            >
-                                Feature Additions
-                            </h4>
-                            <p
-                                class="font-nunito text-gray-700 text-base leading-relaxed"
-                            >
-                                Add the features you've always wanted, from a
-                                relaxing baja shelf or integrated spa to elegant
-                                waterfalls and deck jets.
+                                We integrate low, 18-inch-high seat walls around
+                                patios and fire pits for built-in, permanent
+                                seating. We also construct raised planter walls
+                                to add beautiful landscaping.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Sección 3: Adding New Features (Nueva) -->
             <section class="py-16 bg-white">
                 <div
                     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap md:flex-nowrap items-center gap-12"
                 >
                     <div class="w-full md:w-1/2">
                         <img
-                            src="assets/imgs/pool-9.jpeg"
-                            alt="Pool with baja shelf and spa"
+                            src="../assets/imgs/block-3.jpeg"
+                            alt="A block wall finished with beautiful stone veneer"
                             class="w-full h-auto md:h-[500px] object-cover rounded-lg shadow-xl"
                         />
                     </div>
@@ -481,47 +387,47 @@
                         <h2
                             class="font-orbitron text-gray-900 font-bold text-4xl uppercase mb-4"
                         >
-                            Add Modern Features
+                            Finished for a Custom Look
                         </h2>
                         <div class="w-24 h-1 bg-primary-color mb-6"></div>
                         <div
                             class="font-nunito text-lg text-gray-700 space-y-4"
                         >
                             <p>
-                                A remodel is the perfect time to add features
-                                that completely change how you use your pool. We
-                                can structurally modify your existing pool shell
-                                to include:
+                                A grey cinder block wall is just the start. The
+                                magic is in the finish. We ensure that every
+                                wall we build is a beautiful feature, not just a
+                                utility.
+                            </p>
+                            <p>
+                                Our masons apply finishes that perfectly match
+                                your pool, patio, and home's exterior.
                             </p>
 
                             <ul class="list-disc list-inside space-y-2">
                                 <li>
                                     <strong class="font-semibold"
-                                        >Baja Shelves:</strong
+                                        >Smooth Stucco:</strong
                                     >
-                                    A large, shallow shelf (6-12 inches deep)
-                                    perfect for lounge chairs and kids.
+                                    A clean, modern look. We can apply a smooth
+                                    or textured stucco finish and paint it to
+                                    match your home's exterior color.
                                 </li>
                                 <li>
                                     <strong class="font-semibold"
-                                        >Integrated Spas:</strong
+                                        >Stone Veneer:</strong
                                     >
-                                    Add a custom gunite spa that overflows into
-                                    your pool, usable year-round.
+                                    We apply high-quality stacked stone or
+                                    ledger stone veneers that match the stone
+                                    used on your spa, pool, or BBQ island.
                                 </li>
                                 <li>
                                     <strong class="font-semibold"
-                                        >Water & Fire Features:</strong
+                                        >Wall Caps:</strong
                                     >
-                                    From sheer descent waterfalls to rock
-                                    grottos and fire bowls.
-                                </li>
-                                <li>
-                                    <strong class="font-semibold"
-                                        >LED Lighting:</strong
-                                    >
-                                    Replace your old single bulb with vibrant,
-                                    color-changing LED lights.
+                                    The final touch. We finish the top of the
+                                    wall with pre-cast concrete caps or paver
+                                    coping to match your pool deck.
                                 </li>
                             </ul>
                         </div>
@@ -529,51 +435,46 @@
                 </div>
             </section>
 
-            <!-- Sección 4: Galería (Nueva) -->
             <section class="py-16 bg-gray-50">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <!-- Título -->
                     <div class="text-center mb-12">
                         <h2
                             class="text-4xl font-bold text-gray-900 font-orbitron tracking-wide uppercase"
                         >
-                            Remodeling Showcase
+                            Masonry Project Showcase
                         </h2>
                         <div
                             class="w-36 h-1 bg-primary-color mx-auto mt-4"
                         ></div>
                     </div>
-                    <!-- Grilla de Imágenes -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                         <img
-                            src="assets/imgs/pool-remodel-1.webp"
-                            alt="Modern pool remodel with new tile"
+                            src="../assets/imgs/block-1.jpeg"
+                            alt="Curved retaining wall with stone veneer"
                             class="w-full h-96 object-cover rounded-lg shadow-xl"
                         />
                         <img
-                            src="assets.html/imgs/pool-remodel-2.jpeg"
-                            alt="Pool resurfacing with pebble finish"
-                            class="w-full h-96 object-cover rounded-lg shadow-xl"
-                            onerror="this.src='https://via.placeholder.com/600x400.png/0284C7/FFFFFF?text=Baja+Pools+Project'"
-                        />
-                        <img
-                            src="assets/imgs/after.jpeg"
-                            alt="Complete backyard transformation"
+                            src="../assets/imgs/block-2.jpeg"
+                            alt="Structural retaining wall on a hillside"
                             class="w-full h-96 object-cover rounded-lg shadow-xl"
                         />
                         <img
-                            src="assets/imgs/pool-4.webp"
-                            alt="Remodeled pool with new spa and fire pits"
+                            src="../assets/imgs/exterior-2.jpeg"
+                            alt="Stucco block wall integrated into landscape"
+                            class="w-full h-96 object-cover rounded-lg shadow-xl"
+                        />
+                        <img
+                            src="../assets/imgs/block-3.jpeg"
+                            alt="Garden wall with cap and stucco finish"
                             class="w-full h-96 object-cover rounded-lg shadow-xl"
                         />
                     </div>
                 </div>
             </section>
 
-            <!-- Sección CTA (Reutilizada) -->
             <section
                 class="relative py-20 bg-cover bg-center"
-                style="background-image: url('assets/imgs/pool-3.jpeg')"
+                style="background-image: url('../assets/imgs/block-1.jpeg')"
             >
                 <div class="absolute inset-0 bg-black opacity-70 z-10"></div>
                 <div
@@ -582,15 +483,15 @@
                     <h2
                         class="font-orbitron text-white font-bold text-3xl md:text-4xl uppercase tracking-wide"
                     >
-                        Ready to transform your pool?
+                        Need a Solid Solution?
                     </h2>
                     <p
                         class="font-nunito text-gray-200 text-lg leading-relaxed"
                     >
-                        Don't wait another season. Let our remodeling experts
-                        show you how we can update, upgrade, and completely
-                        reimagine your existing pool. Contact us for a free
-                        consultation.
+                        Whether you're managing a slope, need privacy, or want
+                        to add custom seating and planters, our expert masonry
+                        team builds walls that are both beautiful and built to
+                        last.
                     </p>
                     <a
                         href="#"
@@ -603,30 +504,26 @@
             </section>
         </main>
 
-        <!-- =================================================== -->
-        <!-- FOOTER (Igual a las otras páginas) -->
-        <!-- =================================================== -->
         <footer
             class="bg-black text-gray-300 border-t-4 border-primarbg-primary-color text-lg"
         >
             <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div class="flex flex-wrap justify-between gap-4">
-                    <!-- Columna 1: Logo y Descripción -->
                     <div class="w-full xl:w-1/2 xl:basis-[28%]">
                         <img
                             class="h-48 lg:h-36 object-cover mb-5 w-auto m-auto"
-                            src="assets/imgs/logo.svg"
+                            src="../assets/imgs/logo.svg"
                             alt="Logo Baja Pools"
                         />
+
                         <p class="text-lg leading-relaxed">
                             Baja Pools specializes in premium pool solutions in
                             San Diego County. With an unwavering commitment to
-                            quality and customer satisfaction, we transform
+                            quality and customer satisfaction, we transform _
                             homes with durable, high-quality pools.
                         </p>
                     </div>
 
-                    <!-- Columna 2: Quick Links -->
                     <div class="w-full xl:w-1/2 xl:basis-[16%]">
                         <h3
                             class="text-lg font-orbitron font-semibold text-white"
@@ -658,14 +555,14 @@
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="our-gallery.html"
                                     class="hover:text-sky-400 transition-colors duration-200"
                                     >Our Projects</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="contact.html"
                                     class="hover:text-sky-400 transition-colors duration-200"
                                     >Contact Us</a
                                 >
@@ -673,7 +570,6 @@
                         </ul>
                     </div>
 
-                    <!-- Columna 3: Contact Us -->
                     <div class="w-full xl:w-1/2 xl:basis-[16%]">
                         <h3
                             class="text-lg font-semibold text-white font-orbitron"
@@ -709,13 +605,12 @@
                         </div>
                     </div>
 
-                    <!-- Columna 4: Mapa -->
                     <div
                         class="w-full md:w-1/2 xl:basis-[24%] min-h-[200px] md:min-h-0"
                     >
                         <iframe
                             class="w-full h-full rounded-md border-0"
-                            src="https://www.google.com/maps/embed?pb=!1m18!m12!1m3!1d214691.8969865193!2d-117.2757271501237!3d32.74952800181318!2m3!1f0!2f0!3f0!3m2!1i1024!i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%2C%2C%20CA%2C%20USA!5e0!3m2!1sen!2smx!4v1678886053088!5m2!1sen!2smx"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214691.8969865193!2d-117.2757271501237!3d32.74952800181318!2m3!1f0!2f0!3f0!3m2!1i1024!i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%2C%20CA%2C%20USA!5e0!3m2!1sen!2smx!4v1678886053088!5m2!1sen!2smx"
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
@@ -724,7 +619,6 @@
                     </div>
                 </div>
 
-                <!-- Barra de Copyright -->
                 <div
                     class="border-t-2 border-primarbg-primary-color mt-10 pt-6 text-center"
                 >
@@ -736,8 +630,6 @@
             </div>
         </footer>
 
-        <!-- SCRIPT -->
-        <!-- El script.js ya incluye startDrag/stopDrag -->
-        <script src="assets/script.js"></script>
+        <script src="../assets/script.js"></script>
     </body>
 </html>
