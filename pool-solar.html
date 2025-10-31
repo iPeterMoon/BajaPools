@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pool Solar System | Baja Pools - Pool Contractor</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/output.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body onmouseup="stopDrag()">
+        <!-- =================================================== -->
+        <!-- HEADER (MODIFICADO PARA ESTA PÁGINA) -->
+        <!-- =================================================== -->
+        <nav class="flex flex-col bg-white z-999 relative">
+            <!-- Barra superior de contacto -->
+            <div
+                class="hidden xl:flex justify-between items-center text-black py-2 border-b border-b-primary-color"
+            >
+                <div></div>
+                <a href="" class="flex items-center">
+                    <i
+                        class="bx bxs-phone text-primary-color text-2xl pr-1"
+                    ></i>
+                    <span
+                        class="hover:underline font-lato text-md font-semibold"
+                    >
+                        (760) 207-9568
+                    </span>
+                </a>
+                <a href="" class="flex items-center">
+                    <i
+                        class="bx bxs-envelope text-primary-color text-2xl pr-1"
+                    ></i>
+                    <span
+                        class="hover:underline font-lato text-md font-semibold"
+                    >
+                        info@bajapools.com
+                    </span>
+                </a>
+                <a href="" class="flex items-center">
+                    <i class="bx bxs-map text-primary-color text-2xl pr-1"></i>
+                    <span
+                        class="hover:underline font-lato text-md font-semibold"
+                    >
+                        San Diego County
+                    </span>
+                </a>
+                <div></div>
+                <a href="" class="flex items-center">
+                    <i
+                        class_=""
+                        class="bx bxl-facebook-square text-primary-color text-2xl pr-1"
+                    ></i>
+                    <span
+                        class="hover:underline font-lato text-md font-semibold"
+                    >
+                        Facebook
+                    </span>
+                </a>
+                <a href="" class="flex items-center">
+                    <i
+                        class="bx bxl-instagram-alt text-primary-color text-2xl pr-1"
+                    ></i>
+                    <span
+                        class="hover:underline font-lato text-md font-semibold"
+                    >
+                        Instagram
+                    </span>
+                </a>
+                <div></div>
+            </div>
+            <!-- Barra de Navegación Principal -->
+            <div
+                class="flex justify-between items-center text-black py-4 px-4 xl:px-8 2xl:px-16 bg-white drop-shadow-md"
+            >
+                <a href="index.html">
+                    <img
+                        src="/assets/imgs/logo.svg"
+                        alt="logo baja pools"
+                        class="w-52 h-16 object-cover hover:scale-105 transition-transform"
+                    />
+                </a>
+
+                <!-- Navegación de Escritorio -->
+                <ul
+                    class="hidden md:flex items-center gap-4 xl:gap-8 2xl:gap-16 font-semibold"
+                >
+                    <li
+                        class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
+                    >
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li
+                        class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
+                    >
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <!-- Menú Desplegable de Servicios -->
+                    <li
+                        class="p-3 text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl group relative z-40"
+                    >
+                        <a href="services.html">Services</a>
+                        <i
+                            class="bx bx-chevron-down text-black group-hover:text-primary-color"
+                        ></i>
+                        <div
+                            class="absolute w-60 text-xl bg-white text-black -left-6 top-full z-50 shadow-lg opacity-0 hidden group-hover:opacity-100 group-hover:block transition duration-300 ease-in-out"
+                        >
+                            <ul>
+                                <li
+                                    class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
+                                >
+                                    <a href="pool-installation.html"
+                                        >Pool Installation</a
+                                    >
+                                </li>
+                                <li
+                                    class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
+                                >
+                                    <a href="pavers.html">Pavers & Decking</a>
+                                </li>
+                                <li
+                                    class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
+                                >
+                                    <a href="pool-remodeling.html"
+                                        >Pool Remodeling</a
+                                    >
+                                </li>
+                                <li
+                                    class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
+                                >
+                                    <a href="bbq-fire-pits.html"
+                                        >BBQ/Fire Pits</a
+                                    >
+                                </li>
+                                <li
+                                    class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
+                                >
+                                    <a href="exterior-design.html"
+                                        >Exterior Design</a
+                                    >
+                                </li>
+                                <li
+                                    class="py-2 px-4 bg-white hover:bg-gray-100 hover:text-primary-color transition-colors"
+                                >
+                                    <a href="block-walls.html">Block Walls</a>
+                                </li>
+                                <li
+                                    class="py-2 px-4 bg-gray-100 text-primary-color transition-colors"
+                                >
+                                    <a href="pool-solar.html"
+                                        >Pool Solar System</a
+                                    >
+                                    <!-- Página Actual -->
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li
+                        class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
+                    >
+                        Our Projects
+                    </li>
+                    <li
+                        class="p-3 hover:text-primary-color rounded-md transition transform cursor-pointer font-orbitron italic text-md mdl:text-xl xl:text-2xl"
+                    >
+                        Contact Us
+                    </li>
+                </ul>
+                <button
+                    class="hidden font-orbitron text-md font-bold text-white text-balance 3xl:flex items-center gap-2 bg-primary-color px-4 py-2 rounded-md transition transform hover:brightness-120 cursor-pointer hover:scale-105"
+                >
+                    SCHEDULE FREE CONSULTATION
+                    <i class="bx bx-calendar-alt text-2xl"></i>
+                </button>
+                <!-- Menú Móvil -->
+                <i
+                    class="bx bx-menu md:hidden! text-5xl text-primary-color cursor-pointer"
+                    onclick="toggleMenuState()"
+                ></i>
+                <div
+                    id="mobileMenu"
+                    class="absolute xl:hidden opacity-0 top-24 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transition transform"
+                >
+                    <ul>
+                        <li
+                            class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
+                        >
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li
+                            class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
+                        >
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li
+                            class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
+                        >
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li
+                            class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
+                        >
+                            <a href="#">Our Projects</a>
+                        </li>
+                        <li
+                            class="list-none w-full text-center p-4 hover:bg-sky-400 hover:text-white transition transform cursor-pointer font-orbitron"
+                        >
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- =================================================== -->
+        <!-- HEADER DE PÁGINA (Específico del Servicio) -->
+        <!-- =================================================== -->
+        <header
+            class="relative h-64 md:h-80 bg-cover bg-center"
+            style="background-image: url('assets/imgs/solar-1.webp')"
+        >
+            <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+            <div
+                class="relative z-20 flex flex-col items-center justify-center h-full text-center px-4"
+            >
+                <h1
+                    class="font-orbitron text-white font-bold text-4xl md:text-6xl uppercase tracking-wide"
+                >
+                    Pool Solar Systems
+                </h1>
+                <p
+                    class="font-nunito text-gray-200 text-lg md:text-xl mt-4 max-w-2xl"
+                >
+                    Extend your swim season and heat your pool for free using
+                    the San Diego sun.
+                </p>
+            </div>
+        </header>
+
+        <!-- =================================================== -->
+        <!-- CONTENIDO PRINCIPAL -->
+        <!-- =================================================== -->
+        <main>
+            <!-- Sección 1: Introducción -->
+            <section class="py-16 bg-white">
+                <div
+                    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap md:flex-nowrap items-center gap-12"
+                >
+                    <div class="w-full md:w-1/2">
+                        <h2
+                            class="font-orbitron text-gray-900 font-bold text-4xl uppercase mb-4"
+                        >
+                            Swim Warmer, Swim Longer
+                        </h2>
+                        <div class="w-24 h-1 bg-primary-color mb-6"></div>
+                        <div
+                            class="font-nunito text-lg text-gray-700 space-y-4"
+                        >
+                            <p>
+                                Why let your swim season be limited to just a few
+                                short months? In San Diego, the sun provides a
+                                powerful, free, and eco-friendly resource to
+                                heat your pool. A pool solar system is the most
+                                cost-effective and environmentally friendly way
+                                to warm your pool water.
+                            </p>
+                            <p>
+                                We install high-efficiency solar panel systems
+                                that can raise your pool's temperature by 10-15
+                                degrees, effectively doubling your comfortable
+                                swim season without the monthly sticker shock of
+                                a gas or electric heater.
+                            </p>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>
+                                    <strong class="font-semibold"
+                                        >Zero Operating Costs:</strong
+                                    >
+                                    Heats your pool using free energy from the
+                                    sun.
+                                </li>
+                                <li>
+                                    <strong class="font-semibold"
+                                        >Eco-Friendly:</strong
+                                    >
+                                    No emissions, no fossil fuels. Just clean,
+                                    green energy.
+                                </li>
+                                <li>
+                                    <strong class="font-semibold"
+                                        >Low Maintenance:</strong
+                                    >
+                                    Systems are durable and designed to last
+                                    15-20 years with minimal upkeep.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <img
+                            src="assets/imgs/solar-2.jpeg"
+                            alt="A beautiful, warm pool heated by solar"
+                            class="w-full h-auto md:h-[500px] object-cover rounded-lg shadow-xl"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 2: Cómo Funciona (Nueva) -->
+            <section class="py-16 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <!-- Título -->
+                    <div class="text-center mb-12">
+                        <h2
+                            class="text-4xl font-bold text-gray-900 font-orbitron tracking-wide uppercase"
+                        >
+                            How It Works
+                        </h2>
+                        <div
+                            class="w-36 h-1 bg-primary-color mx-auto mt-4"
+                        ></div>
+                        <p
+                            class="font-nunito text-lg text-gray-600 max-w-2xl mx-auto mt-6"
+                        >
+                            Our solar heating system is simple, efficient, and
+                            works with your existing pool pump.
+                        </p>
+                    </div>
+
+                    <!-- Contenedor de 4 Columnas -->
+                    <div
+                        class="flex flex-wrap justify-center gap-8 lg:gap-6"
+                    >
+                        <!-- Columna 1: Pump -->
+                        <div
+                            class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
+                        >
+                            <i
+                                class="bx bx-water text-6xl text-primary-color"
+                            ></i>
+                            <h4
+                                class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
+                            >
+                                1. Pump
+                            </h4>
+                            <p
+                                class="font-nunito text-gray-700 text-base leading-relaxed"
+                            >
+                                Your pool pump sends cold water from the pool up
+                                to the solar collectors on your roof.
+                            </p>
+                        </div>
+
+                        <!-- Columna 2: Collect -->
+                        <div
+                            class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
+                        >
+                            <i class="bx bxs-sun text-6xl text-primary-color"></i>
+                            <h4
+                                class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
+                            >
+                                2. Heat
+                            </h4>
+                            <p
+                                class="font-nunito text-gray-700 text-base leading-relaxed"
+                            >
+                                The sun heats the water as it passes through the
+                                many small tubes inside the solar collectors.
+                            </p>
+                        </div>
+
+                        <!-- Columna 3: Return -->
+                        <div
+                            class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
+                        >
+                            <i
+                                class="bx bx-recycle text-6xl text-primary-color"
+                            ></i>
+                            <h4
+                                class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
+                            >
+                                3. Return
+                            </h4>
+                            <p
+                                class="font-nunito text-gray-700 text-base leading-relaxed"
+                            >
+                                The now-warm water flows back down from the roof
+                                and returns to your pool.
+                            </p>
+                        </div>
+
+                        <!-- Columna 4: Swim -->
+                        <div
+                            class="flex-1 basis-full md:basis-[45%] lg:basis-[22%] max-w-sm text-center p-6 bg-white rounded-lg shadow-lg flex flex-col items-center"
+                        >
+                            <i class="bx bxs-smile text-6xl text-primary-color"></i>
+                            <h4
+                                class="text-2xl font-bold text-gray-900 mt-4 mb-2 font-orbitron"
+                            >
+                                4. Swim!
+                            </h4>
+                            <p
+                                class="font-nunito text-gray-700 text-base leading-relaxed"
+                            >
+                                This simple loop repeats all day, gradually
+                                raising your pool to a comfortable temperature.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 3: Solar vs. Other Heaters (Nueva) -->
+            <section class="py-16 bg-white">
+                <div
+                    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap-reverse md:flex-nowrap items-center gap-12"
+                >
+                    <div class="w-full md:w-1/2">
+                        <h2
+                            class="font-orbitron text-gray-900 font-bold text-4xl uppercase mb-4"
+                        >
+                            A Smarter Investment
+                        </h2>
+                        <div class="w-24 h-1 bg-primary-color mb-6"></div>
+                        <div
+                            class="font-nunito text-lg text-gray-700 space-y-4"
+                        >
+                            <p>
+                                While gas or electric heat pumps can heat a pool
+                                faster, they come with high installation costs
+                                and even higher monthly utility bills.
+                            </p>
+                            <p>
+                                A solar system is a one-time investment that
+                                typically pays for itself in just 2-3 years from
+                                the money you save on gas or electricity.
+                            </p>
+
+                            <ul class="list-disc list-inside space-y-2">
+                                <li>
+                                    <strong class="font-semibold"
+                                        >Gas Heaters:</strong
+                                    >
+                                    Very expensive to run. Monthly bills can be
+                                    hundreds of dollars. Not environmentally
+                                    friendly.
+                                </li>
+                                <li>
+                                    <strong class="font-semibold"
+                                        >Electric Heat Pumps:</strong
+                                    >
+                                    More efficient than gas, but still add a
+                                    significant cost to your electric bill and
+                                    rely on the grid.
+                                </li>
+                                <li>
+                                    <strong class="font-semibold"
+                                        >Solar Heaters:</strong
+                                    >
+                                    No monthly operating costs. Works anytime
+                                    the sun is shining. The system pays for
+                                    itself.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <img
+                            src="assets/imgs/solar-1.webp"
+                            alt="Solar panels installed on a residential roof"
+                            class="w-full h-auto md:h-[500px] object-cover rounded-lg shadow-xl"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 4: Galería (Nueva) -->
+            <section class="py-16 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <!-- Título -->
+                    <div class="text-center mb-12">
+                        <h2
+                            class="text-4xl font-bold text-gray-900 font-orbitron tracking-wide uppercase"
+                        >
+                            Our Installations
+                        </h2>
+                        <div
+                            class="w-36 h-1 bg-primary-color mx-auto mt-4"
+                        ></div>
+                    </div>
+                    <!-- Grilla de Imágenes -->
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8"
+                    >
+                        <img
+                            src="assets/imgs/solar-1.webp"
+                            alt="Clean solar panel installation on a tile roof"
+                            class="w-full h-96 object-cover rounded-lg shadow-xl"
+                        />
+                        <img
+                            src="assets.png/solar-2.jpeg"
+                            alt="Large solar collector array for a big pool"
+                            class="w-full h-96 object-cover rounded-lg shadow-xl"
+                            onerror="this.src='httpsG://via.placeholder.com/600x400.png/0284C7/FFFFFF?text=Solar+Installation'"
+                        />
+                        <img
+                            src="assets/imgs/solar-2.jpeg"
+                            alt="A warm, steaming pool on a cool morning"
+                            class="w-full h-96 object-cover rounded-lg shadow-xl"
+                        />
+                        <img
+                            src="assets.png/solar-1.webp"
+                            alt="Discreet solar panel setup"
+                            class="w-full h-96 object-cover rounded-lg shadow-xl"
+                            onerror="this.src='https.via.placeholder.com/600x400.png/0284C7/FFFFFF?text=Solar+Installation'"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección CTA (Reutilizada) -->
+            <section
+                class="relative py-20 bg-cover bg-center"
+                style="background-image: url('assets/imgs/solar-2.jpeg')"
+            >
+                <div class="absolute inset-0 bg-black opacity-70 z-10"></div>
+                <div
+                    class="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center gap-6"
+                >
+                    <h2
+                        class="font-orbitron text-white font-bold text-3xl md:text-4xl uppercase tracking-wide"
+                    >
+                        Harness the Sun
+                    </h2>
+                    <p
+                        class="font-nunito text-gray-200 text-lg leading-relaxed"
+                    >
+                        Ready to enjoy a warmer pool, a longer swim season, and
+                        a $0 pool heating bill? Contact our solar experts today
+                        for a free analysis and estimate.
+                    </D>
+                    <a
+                        href="#"
+                        class="inline-flex items-center gap-2 bg-primary-color text-white font-orbitron text-md font-bold px-6 py-3 rounded-md transition transform hover:brightness-120 hover:scale-105 cursor-pointer uppercase"
+                    >
+                        GET MY FREE SOLAR QUOTE
+                        <i class="bx bx-calendar-alt text-2xl"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- =================================================== -->
+        <!-- FOOTER (Igual a las otras páginas) -->
+        <!-- =================================================== -->
+        <footer
+            class="bg-black text-gray-300 border-t-4 border-primarbg-primary-color text-lg"
+        >
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="flex flex-wrap justify-between gap-4">
+                    <!-- Columna 1: Logo y Descripción -->
+                    <div class="w-full xl:w-1/2 xl:basis-[28%]">
+                        <img
+                            class="h-48 lg:h-36 object-cover mb-5 w-auto m-auto"
+                            src="assets/imgs/logo.svg"
+                            alt="Logo Baja Pools"
+                        />
+                        <p class="text-lg leading-relaxed">
+                            Baja Pools specializes in premium pool solutions in
+                            San Diego County. With an unwavering commitment to
+                            quality and customer satisfaction, we transform
+... (content continues)
+                        </p>
+                    </div>
+
+                    <!-- Columna 2: Quick Links -->
+                    <div class="w-full xl:w-1/2 xl:basis-[16%]">
+                        <h3
+                            class="text-lg font-orbitron font-semibold text-white"
+                        >
+                            Quick Links
+                        </h3>
+                        <div class="w-full h-0.5 bg-primary-color my-4"></div>
+                        <ul class="space-y-3">
+                            <li>
+                                <a
+                                    href="index.html"
+                                    class="hover:text-sky-400 transition-colors duration-200"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="about.html"
+                                    class="hover:text-sky-400 transition-colors duration-200"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="services.html"
+                                    class="hover:text-sky-400 transition-colors duration-200"
+                                    >Services</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-sky-400 transition-colors duration-200"
+                                    >Our Projects</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-sky-400 transition-colors duration-200"
+                                    >Contact Us</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna 3: Contact Us -->
+                    <div class="w-full xl:w-1/2 xl:basis-[16%]">
+                        <h3
+                            class="text-lg font-semibold text-white font-orbitron"
+                        >
+                            Contact Us
+                        </h3>
+                        <div class="w-full h-0.5 bg-primary-color my-4"></div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <i
+                                    class="bx bx-phone text-2xl text-primarbg-primary-color"
+                                ></i>
+                                <span class="ml-3">+1 (760) 207-9568</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i
+                                    class="bx bx-envelope text-2xl text-primarbg-primary-color"
+                                ></i>
+                                <span class="ml-3">Bajapools760@gmail.com</span>
+                            </li>
+                        </ul>
+                        <div class="flex space-x-3 mt-6">
+                            <a href="#">
+                                <i
+                                    class="bx bxl-facebook-square text-3xl text-primary-color"
+                                ></i>
+                            </a>
+                            <a href="#">
+                                <i
+                                    class="bx bxl-instagram-alt text-3xl text-primary-color"
+                                ></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Columna 4: Mapa -->
+                    <div
+                        class="w-full md:w-1/2 xl:basis-[24%] min-h-[200px] md:min-h-0"
+                    >
+                        <iframe
+                            class="w-full h-full rounded-md border-0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!m12!1m3!1d214691.8969865193!2d-117.2757271501237!3d32.74952800181318!2m3!1f0!2f0!3f0!3m2!1i1024!i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%2C%2C%20CA%2C%20USA!5e0!3m2!1sen!2smx!4v1678886053088!5m2!1sen!2smx"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        >
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Barra de Copyright -->
+                <div
+                    class="border-t-2 border-primarbg-primary-color mt-10 pt-6 text-center"
+                >
+                    <p class="text-sm text-gray-500">
+                        Copyright © Baja Pools. 2025. All Rights Reserved.
+                        Privacy Policy. Terms & Conditions
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- SCRIPT -->
+        <script src="assets/script.js"></script>
+    </body>
+</html>
