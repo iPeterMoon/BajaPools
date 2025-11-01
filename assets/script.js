@@ -26,16 +26,23 @@ const startDrag = (e) => {
     isDragging = true;
     document.body.style.userSelect = "none";
 
-    currentDragHandler = (moveEvent) => {
-        const container = document.getElementById("container");
-        const beforeContainer = document.getElementById("beforeContainer");
-        const slider = document.getElementById("slider");
+    const eventType = e.type.includes("touch") ? "touch" : "mouse";
+    const clientX = eventType === "touch" ? e.touches[0].clientX : e.clientX;
 
-        const containerRect = container.getBoundingClientRect();
-        const containerWidth = containerRect.width;
+    const container = document.getElementById("container");
+    const beforeContainer = document.getElementById("beforeContainer");
+    const slider = document.getElementById("slider");
+    const containerRect = container.getBoundingClientRect();
+    const containerWidth = containerRect.width;
+
+    currentDragHandler = (moveEvent) => {
+        const currentClientX =
+            eventType === "touch"
+                ? moveEvent.touches[0].clientX
+                : moveEvent.clientX;
 
         // Calcular posición limitada al contenedor
-        let xPos = moveEvent.clientX - containerRect.left;
+        let xPos = currentClientX - containerRect.left;
         // Ajustar para centrar en la línea blanca
         xPos = Math.max(0, Math.min(xPos, containerWidth));
 
@@ -51,12 +58,24 @@ const startDrag = (e) => {
         moveEvent.preventDefault();
     };
 
-    document.addEventListener("mousemove", currentDragHandler);
+    if (eventType === "touch") {
+        document.addEventListener("touchmove", currentDragHandler, {
+            passive: false,
+        });
+        document.addEventListener("touchend", stopDrag);
+    } else {
+        document.addEventListener("mousemove", currentDragHandler);
+    }
 };
 
 const stopDrag = () => {
     if (isDragging && currentDragHandler) {
         document.removeEventListener("mousemove", currentDragHandler);
+
+        document.removeEventListener("touchend", currentDragHandler, {
+            passive: false,
+        });
+        document.removeEventListener("touchmove", stopDrag);
     }
 
     isDragging = false;
