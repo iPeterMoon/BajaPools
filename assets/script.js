@@ -1,12 +1,19 @@
 const toggleMenuState = () => {
     const mobileMenu = document.getElementById("mobileMenu");
-    let isHidden = mobileMenu.classList.contains("opacity-0");
+    let isHidden = mobileMenu.classList.contains("hidden");
+
     if (isHidden) {
-        mobileMenu.classList.remove("opacity-0");
-        mobileMenu.classList.add("opacity-100");
+        mobileMenu.classList.remove("hidden");
+        setTimeout(() => {
+            mobileMenu.classList.remove("opacity-0");
+            mobileMenu.classList.add("opacity-100", "flex");
+        }, 10);
     } else {
-        mobileMenu.classList.remove("opacity-100");
+        mobileMenu.classList.remove("opacity-100", "flex");
         mobileMenu.classList.add("opacity-0");
+        setTimeout(() => {
+            mobileMenu.classList.add("hidden");
+        }, 300);
     }
 };
 

@@ -18,7 +18,7 @@
                 class="hidden xl:flex justify-between items-center text-black py-2 border-b border-b-primary-color"
             >
                 <div></div>
-                <a href="" class="flex items-center">
+                <a href="tel:+17602079568" class="flex items-center">
                     <i
                         class="bx bxs-phone text-primary-color text-2xl pr-1"
                     ></i>
@@ -163,19 +163,22 @@
                         <a href="contact.html">Contact Us</a>
                     </li>
                 </ul>
-                <button
-                    class="hidden font-orbitron text-md font-bold text-white text-balance 3xl:flex items-center gap-2 bg-primary-color px-4 py-2 rounded-md transition transform hover:brightness-120 cursor-pointer hover:scale-105"
-                >
-                    SCHEDULE FREE CONSULTATION
-                    <i class="bx bx-calendar-alt text-2xl"></i>
-                </button>
+                <a href="contact.html">
+                    <button
+                        class="hidden font-orbitron text-md font-bold text-white text-balance 3xl:flex items-center gap-2 bg-primary-color px-4 py-2 rounded-md transition transform hover:brightness-120 cursor-pointer hover:scale-105"
+                    >
+                        SCHEDULE FREE CONSULTATION
+                        <i class="bx bx-calendar-alt text-2xl"></i>
+                    </button>
+                </a>
                 <i
                     class="bx bx-menu md:hidden! text-5xl text-primary-color cursor-pointer"
                     onclick="toggleMenuState()"
                 ></i>
+
                 <div
                     id="mobileMenu"
-                    class="absolute xl:hidden opacity-0 top-24 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transition transform"
+                    class="absolute xl:hidden hidden opacity-0 top-24 left-0 w-full bg-white flex-col items-center gap-6 font-semibold text-lg transition transform pointer-events-none"
                 >
                     <ul>
                         <li
@@ -840,10 +843,12 @@
                         <div class="w-full h-0.5 bg-primary-color my-4"></div>
                         <ul class="space-y-4">
                             <li class="flex items-center">
-                                <i
-                                    class="bx bx-phone text-2xl text-primarbg-primary-color"
-                                ></i>
-                                <span class="ml-3">+1 (760) 207-9568</span>
+                                <a href="tel:+17602079568">
+                                    <i
+                                        class="bx bx-phone text-2xl text-primarbg-primary-color"
+                                    ></i>
+                                    <span class="ml-3">+1 (760) 207-9568</span>
+                                </a>
                             </li>
                             <li class="flex items-center">
                                 <i

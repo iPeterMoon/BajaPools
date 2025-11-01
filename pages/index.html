@@ -170,14 +170,15 @@
                         SCHEDULE FREE CONSULTATION
                         <i class="bx bx-calendar-alt text-2xl"></i>
                     </button>
-                    <i
-                        class="bx bx-menu md:hidden! text-5xl text-primary-color cursor-pointer"
-                        onclick="toggleMenuState()"
-                    ></i>
                 </a>
+                <i
+                    class="bx bx-menu md:hidden! text-5xl text-primary-color cursor-pointer"
+                    onclick="toggleMenuState()"
+                ></i>
+
                 <div
                     id="mobileMenu"
-                    class="absolute xl:hidden opacity-0 top-24 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transition transform"
+                    class="absolute xl:hidden hidden opacity-0 top-24 left-0 w-full bg-white flex-col items-center gap-6 font-semibold text-lg transition transform pointer-events-none"
                 >
                     <ul>
                         <li
@@ -291,7 +292,7 @@
                             <img
                                 id="after"
                                 class="w-full h-full object-cover"
-                                src="../assets/imgs/after.jpeg"
+                                src="../assets/imgs/after.jpg"
                                 alt="After"
                             />
                         </div>
@@ -303,7 +304,7 @@
                             <img
                                 id="before"
                                 class="w-full h-full object-cover"
-                                src="../assets/imgs/before.jpeg"
+                                src="../assets/imgs/before.jpg"
                                 alt="Before"
                             />
                         </div>
