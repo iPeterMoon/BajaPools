@@ -18,16 +18,16 @@ const toggleMenuState = () => {
 };
 
 let isDragging = false;
-let currentDragHandler = null;
 
 const startDrag = (e) => {
+    // Solo permitir un toque
+    if (e.type === "touchstart" && e.touches.length > 1) {
+        return;
+    }
+
     e.preventDefault();
-    if (isDragging) return;
     isDragging = true;
     document.body.style.userSelect = "none";
-
-    const eventType = e.type.includes("touch") ? "touch" : "mouse";
-    const clientX = eventType === "touch" ? e.touches[0].clientX : e.clientX;
 
     const container = document.getElementById("container");
     const beforeContainer = document.getElementById("beforeContainer");
@@ -35,15 +35,20 @@ const startDrag = (e) => {
     const containerRect = container.getBoundingClientRect();
     const containerWidth = containerRect.width;
 
-    currentDragHandler = (moveEvent) => {
-        const currentClientX =
-            eventType === "touch"
-                ? moveEvent.touches[0].clientX
-                : moveEvent.clientX;
+    const handleMove = (moveEvent) => {
+        if (!isDragging) return;
+
+        let clientX;
+        if (moveEvent.type === "touchmove") {
+            if (moveEvent.touches.length === 0) return;
+            clientX = moveEvent.touches[0].clientX;
+            moveEvent.preventDefault();
+        } else {
+            clientX = moveEvent.clientX;
+        }
 
         // Calcular posición limitada al contenedor
-        let xPos = currentClientX - containerRect.left;
-        // Ajustar para centrar en la línea blanca
+        let xPos = clientX - containerRect.left;
         xPos = Math.max(0, Math.min(xPos, containerWidth));
 
         // Calcular porcentaje para clip-path
@@ -54,33 +59,25 @@ const startDrag = (e) => {
 
         // Actualizar posición del slider
         slider.style.left = `${percentage}%`;
-
-        moveEvent.preventDefault();
     };
 
-    if (eventType === "touch") {
-        document.addEventListener("touchmove", currentDragHandler, {
-            passive: false,
-        });
-        document.addEventListener("touchend", stopDrag);
-    } else {
-        document.addEventListener("mousemove", currentDragHandler);
-    }
-};
+    const handleEnd = () => {
+        isDragging = false;
+        document.body.style.userSelect = "";
 
-const stopDrag = () => {
-    if (isDragging && currentDragHandler) {
-        document.removeEventListener("mousemove", currentDragHandler);
+        document.removeEventListener("mousemove", handleMove);
+        document.removeEventListener("mouseup", handleEnd);
+        document.removeEventListener("touchmove", handleMove);
+        document.removeEventListener("touchend", handleEnd);
+        document.removeEventListener("touchcancel", handleEnd);
+    };
 
-        document.removeEventListener("touchend", currentDragHandler, {
-            passive: false,
-        });
-        document.removeEventListener("touchmove", stopDrag);
-    }
-
-    isDragging = false;
-    document.body.style.userSelect = "";
-    currentDragHandler = null;
+    // Agregar listeners para ambos tipos de eventos
+    document.addEventListener("mousemove", handleMove);
+    document.addEventListener("mouseup", handleEnd);
+    document.addEventListener("touchmove", handleMove, { passive: false });
+    document.addEventListener("touchend", handleEnd);
+    document.addEventListener("touchcancel", handleEnd);
 };
 
 // Scroll Animation for Process Steps
